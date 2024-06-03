@@ -21,3 +21,7 @@ Route::get('/articles-resources', function () {
 Route::get('/events', function () {
     return view('pages.events');
 });
+
+Route::get('/contact-us', function () {
+    return view('pages.contact-us');
+});
