@@ -11,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         @vite('resources/css/app.css')
         @livewireStyles
     </head>
@@ -41,6 +43,21 @@
 
         <script>
             AOS.init();
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    items: 1,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true
+                });
+            });
         </script>
     </body>
 </html>

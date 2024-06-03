@@ -4,5 +4,6 @@
         <livewire:intro-video-text/>
         <livewire:appliances/>
         <livewire:demonstration-classes/>
+        <livewire:testimonials/>
     </div>
 </x-app-layout>

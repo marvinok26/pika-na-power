@@ -43,3 +43,33 @@ h1, h2, h3, h4{
     z-index: 1000;
     width: 100%;
 }
+.owl-nav {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.owl-nav button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    /* color: #163466; */
+    cursor: pointer;
+}
+.owl-nav button:hover {
+    background: none !important;
+    color:black !important;
+}
+.owl-nav button.owl-prev {
+    left: -70px;
+}
+.owl-nav button.owl-next {
+    right: -70px;
+}
+.owl-dots{display: none;}
+
+.owl-prev span,  .owl-next span {
+   font-size: 80px;
+}

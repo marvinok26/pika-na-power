@@ -11,7 +11,7 @@
                 <nav class="sm:w-3/4 flex flex-col sm:flex-row sm:justify-between sm:items-center">
                     @for ($i = 1; $i <= 4; $i++)
                         <a href="#" class="flex text-base items-center text-gray-800 font-bold hover:text-gray-900 py-2 px-3">
-                            <img src="/badge.svg" class="w-12 h-12 mr-3" alt="">
+                            <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
                             Quick Link {{ $i }}
                         </a>
                     @endfor
