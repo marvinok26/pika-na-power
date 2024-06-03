@@ -1,0 +1,17 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BkJ1unlZ.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/fonts/Hilmar-Medium.otf": {
+    "file": "assets/Hilmar-Medium-B3sd6bvI.otf",
+    "src": "resources/css/fonts/Hilmar-Medium.otf"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C1-XIpUa.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
