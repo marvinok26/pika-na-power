@@ -9,26 +9,48 @@
                 </div>
 
                 <nav class="sm:w-3/4 flex flex-col sm:flex-row sm:justify-between sm:items-center">
-                    @for ($i = 1; $i <= 4; $i++)
+                    
                         <a href="#" class="flex text-base items-center text-gray-800 font-bold hover:text-gray-900 py-2 px-3">
                             <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
-                            Quick Link {{ $i }}
+                            About Us
                         </a>
-                    @endfor
+                        <a href="#" class="flex text-base items-center text-gray-800 font-bold hover:text-gray-900 py-2 px-3">
+                            <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
+                            Classes
+                        </a>
+                        <a href="#" class="flex text-base items-center text-gray-800 font-bold hover:text-gray-900 py-2 px-3">
+                            <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
+                            Articles & Resources
+                        </a>
+                        <a href="#" class="flex text-base items-center text-gray-800 font-bold hover:text-gray-900 py-2 px-3">
+                            <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
+                            Events
+                        </a>
+                   
                 </nav>
             </div>
         </div>
     </div>
 
     <div class="bg-[#163466]">
-        <div class="mx-auto lg:px-0 px-20  max-w-6xl p-6">
-            <div class="grid grid-cols-2 mx-auto text-center sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-5">
-                @for ($i = 1; $i <= 8; $i++)
-                    <a href="#" class="flex items-center">
-                        <span class="ml-2 text-base text-white">Social {{ $i }}</span>
-                    </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-6">
+            <div class="gap-6 grid grid-cols-2 md:grid-cols-3 lg:grid-col-5 xl:grid-cols-7">
+                @for($i = 0; $i < 7; $i++)
+                    <div class="col-span-1 group">
+                        <a href="#">
+                            <div class="flex flex-row items-center gap-3">
+                           
+                                <div class="flex-shrink-0 w-7 h-7">
+                                    <svg class="fill-current text-yellow-400" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                                </div>
+                                <div class="flex-1 group-hover:underline text-white text-base">Facebook</div>
+                            </div>      
+                        </a>
+                        
+                    </div>
                 @endfor
             </div>
+            
         </div>
     </div>
     <div class="mx-auto  max-w-6xl lg:px-0 px-10 py-6">
