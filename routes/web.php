@@ -13,3 +13,7 @@ Route::get('/about-us', function () {
 Route::get('/classes', function () {
     return view('pages.classes');
 });
+
+Route::get('/articles-resources', function () {
+    return view('pages.articles-resources');
+});
