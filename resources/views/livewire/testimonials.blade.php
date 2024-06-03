@@ -4,7 +4,7 @@
             <h2  class="text-3xl dark:text-white text-[#163466] lg:text-5xl mb-6 font-bold lg:py-0">
                 Testimonials
             </h2>
-            <div class="owl-carousel owl-theme mt-20">
+            <div class="owl-carousel owl-carousel-1 owl-theme mt-20">
                 @for ($i = 0; $i < 4; $i++)
                 <div class="item px-20 ">
                     <p class="">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quas atque et eum porro, id magnam culpa ducimus commodi odit aliquam! Rem fuga vitae officia repellat, harum vero quia ex!"</p>

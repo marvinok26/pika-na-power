@@ -15,5 +15,6 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+    <livewire:pika-table/> 
 </section>

@@ -48,7 +48,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script>
             $(document).ready(function(){
-                $(".owl-carousel").owlCarousel({
+                $(".owl-carousel-1").owlCarousel({
                     loop: true,
                     margin: 10,
                     nav: true,
@@ -57,6 +57,24 @@
                     autoplayTimeout: 5000,
                     autoplayHoverPause: true
                 });
+
+                $(".owl-carousel-2").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 4,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2 // 2 items for screens from 0px and up
+            },
+            768: {
+                items: 4 // 4 items for screens from 768px and up
+            }
+        }
+    });
             });
         </script>
     </body>

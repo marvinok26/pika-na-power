@@ -21,6 +21,9 @@ font-family: "Lexend Deca", sans-serif;
 h1, h2, h3, h4{
     font-family: 'Hilmar' !important;
 }
+.hilmar{
+    font-family: 'Hilmar' !important;
+}
 
 .blog-content p{
     margin-bottom: 17px;
@@ -43,7 +46,7 @@ h1, h2, h3, h4{
     z-index: 1000;
     width: 100%;
 }
-.owl-nav {
+.owl-carousel-1 .owl-nav {
     position: absolute;
     top: 30%;
     width: 100%;
@@ -51,25 +54,37 @@ h1, h2, h3, h4{
     justify-content: space-between;
     transform: translateY(-50%);
 }
-.owl-nav button {
+.owl-carousel-1  .owl-nav button {
     background: none;
     border: none;
     font-size: 2rem;
     /* color: #163466; */
     cursor: pointer;
 }
-.owl-nav button:hover {
+.owl-carousel-1 .owl-nav button:hover {
     background: none !important;
     color:black !important;
 }
-.owl-nav button.owl-prev {
+.owl-carousel-1 .owl-nav button.owl-prev {
     left: -70px;
 }
-.owl-nav button.owl-next {
+.owl-carousel-1 .owl-nav button.owl-next {
     right: -70px;
 }
-.owl-dots{display: none;}
+.owl-carousel-1 .owl-dots{display: none;}
 
-.owl-prev span,  .owl-next span {
+.owl-carousel-1 .owl-prev span,  .owl-next span {
    font-size: 80px;
+}
+
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0 1rem; /* Adds space between rows */
+}
+.table-custom td {
+    border-bottom: 2px solid #065f46; /* green-800 */
+    /* background-color: rgba(255, 255, 255, 0.8); White background with some transparency */
+}
+.table-custom td {
+    border-left: 2px solid #065f46; /* green-800 */
 }
