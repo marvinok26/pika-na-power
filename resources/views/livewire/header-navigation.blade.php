@@ -134,7 +134,7 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
             <a href="/about-us" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal text-black">About Us</a>
-            <a href="#" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal  text-black">Features</a>
+            <a href="/classes" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal  text-black">Classes</a>
             <a href="#" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal text-black">Marketplace</a>
             <a href="#" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal text-black">Company</a>
         </div>
