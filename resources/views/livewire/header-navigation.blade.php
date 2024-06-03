@@ -136,7 +136,7 @@
             <a href="/about-us" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal text-black">About Us</a>
             <a href="/classes" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal  text-black">Classes</a>
             <a href="/articles-resources" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal text-black">Articles & Resources</a>
-            <a href="#" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal text-black">Company</a>
+            <a href="/events" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal text-black">Events</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <button @click="isSearchOpen = !isSearchOpen"

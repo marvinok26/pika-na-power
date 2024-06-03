@@ -3,9 +3,8 @@
         <livewire:page-banner/>
         <livewire:breadcrumbs/>
         <livewire:search/>
-        <livewire:articles/>
-        <livewire:resources/>
-        <livewire:shops/>
+        <livewire:events/>
+        
        
         
     </div>

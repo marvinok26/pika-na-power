@@ -17,3 +17,7 @@ Route::get('/classes', function () {
 Route::get('/articles-resources', function () {
     return view('pages.articles-resources');
 });
+
+Route::get('/events', function () {
+    return view('pages.events');
+});

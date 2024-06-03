@@ -14,7 +14,7 @@
                 
             </div>
         </div>
-        <div class="grid mt-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="grid mt-8 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Item 1 -->
             @for ($i = 0; $i < 8; $i++)
             <a href="#"class="border-2 rounded-lg border-blue-400 text-center bg-gray-50 p-6 text-center hover:border-blue-800">
