@@ -10,10 +10,7 @@
 
                 <nav class="sm:w-3/4 flex flex-col sm:flex-row sm:justify-between sm:items-center">
                     
-                        <a href="#" class="flex text-base items-center text-gray-800 font-bold hover:text-gray-900 py-2 px-3">
-                            <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
-                            About Us
-                        </a>
+                       
                         <a href="#" class="flex text-base items-center text-gray-800 font-bold hover:text-gray-900 py-2 px-3">
                             <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
                             Classes
@@ -56,38 +53,52 @@
     <div class="mx-auto  max-w-6xl lg:px-0 px-10 py-6">
         <div class="flex flex-row justify-center gap-x-20">
             <div class="w-full sm:w-1/2">
-                <h3 class="text-lg text-[#163466] dark:text-[#FACA21] font-semibold mb-4">Categories</h3>
-                <nav class="flex flex-col sm:flex-row justify-normal gap-2">
-                    @for ($i = 1; $i <= 5; $i++)
+                <h3 class="text-2xl text-[#163466] dark:text-[#FACA21] font-semibold mb-4">Pages</h3>
+                <nav class="flex flex-col sm:flex-row justify-normal gap-6">
+                    
                         <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">
-                            Category {{ $i }}</a>
-                    @endfor
+                            Home </a>
+                            <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">
+                                About Us </a>
+                                <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">
+                                    Classes </a>
+                                    <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">
+                                        Articles & Resources </a>
+                                        <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">
+                                            Events </a>
+                   
                 </nav>
             </div>
 
             <div class="w-full sm:w-1/2 sm:mt-0">
-                <h3 class="text-lg text-[#163466] dark:text-[#FACA21] font-semibold mb-4">Links</h3>
-                <nav class="flex flex-col sm:flex-row text-start justify-normal gap-2">
-                    @for ($i = 1; $i <= 5; $i++)
-                        <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">Link {{ $i }}</a>
-                    @endfor
+                <h3 class="text-2xl text-[#163466] dark:text-[#FACA21] font-semibold mb-4">Quick Links</h3>
+                <nav class="flex flex-col sm:flex-row text-start justify-normal gap-6">
+                    
+                        <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">Privacy Policy</a>
+                        <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">Terms & Conditions</a>
+                        <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">Contact Us</a>
+
+                    
                 </nav>
             </div>
         </div>
     </div>
     <div class="mx-auto lg:px-0 px-10 max-w-6xl border rounded border-blue-200 dark:border-white ">
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            @for ($i = 1; $i <= 5; $i++)
-                <div class="flex items-start text-left p-4">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            @for ($i = 1; $i <= 4; $i++)
+                <div class="flex items-start justify-center text-left p-4">
+                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-[#163466] text-white rounded-full mr-2">
+                        <span class="text-yellow-400">{{ $i }}</span>
+                    </div>
                     <div>
-                        <h3 class="text-base dark:text-white font-semibold mb-1">Title {{ $i }}</h3>
+                        <h3 class="text-base  font-semibold mb-1">Title {{ $i }}</h3>
                         <p class="text-base text-[#163466]">Subtitle {{ $i }}</p>
                     </div>
                 </div>
             @endfor
         </div>
     </div>
-    <div class="text-center py-4 dark:text-white text-gray-600">
+    <div class="text-center py-6 dark:text-white text-gray-600">
         <p>&copy; {{ \Carbon\Carbon::now()->format('Y') }} - All Rights Reserved</p>
     </div>
 </div>
