@@ -1,10 +1,10 @@
 <section class="bg-cover bg-top bg-no-repeat py-12" style="background-image: url('/images/bg.png');">
     <div class="mx-auto max-w-7xl lg:px-0 px-10 pb-10 ">
-        <h2  class="text-3xl dark:text-white text-[#163466] text-center lg:text-4xl my-6 font-bold lg:py-0">
+        <h2  class="text-3xl  text-[#163466] text-center lg:text-4xl my-6 font-bold lg:py-0">
             Enhance your culinary prowess with live <br>
 cooking classes and workshops
         </h2>
-        <div class="mx-auto lg:px-0 px-10 max-w-6xl border rounded border-blue-200 dark:border-white">
+        <div class="mx-auto lg:px-0 px-10 max-w-6xl border rounded border-blue-200 dark:border-black">
             <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 @for ($i = 1; $i <= 4; $i++)
                     <div class="flex items-start justify-center text-left p-4">
@@ -12,7 +12,7 @@ cooking classes and workshops
                             <span class="text-yellow-400">{{ $i }}</span>
                         </div>
                         <div>
-                            <h3 class="text-base dark:text-white font-semibold mb-1">Title {{ $i }}</h3>
+                            <h3 class="text-base  font-semibold mb-1">Title {{ $i }}</h3>
                             <p class="text-base text-[#163466]">Subtitle {{ $i }}</p>
                         </div>
                     </div>

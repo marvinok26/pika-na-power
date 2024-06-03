@@ -3,21 +3,21 @@
         <div class="flex flex-wrap justify-center items-center -mx-4">
             <!-- Video Column -->
             <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                <h2  class="text-3xl dark:text-white text-black lg:text-4xl my-6 font-bold lg:py-0">
+                <h2  class="text-3xl  text-black lg:text-4xl my-6 font-bold lg:py-0">
                     Resources
                 </h2>
             </div>
             
             <!-- Text Column -->
             <div class="w-full md:w-1/2 px-4">
-                <p class="dark:text-white  text-black text-base">Laborum occaecat aliquip ad labore irure do exercitation aliqua aliquip enim laboris adipisicing. Occaecat fugiat cupidatat nulla. Ad aliqua enim magna irure incididunt aliqua nulla do duis.</p>
+                <p class=" text-black text-base">Laborum occaecat aliquip ad labore irure do exercitation aliqua aliquip enim laboris adipisicing. Occaecat fugiat cupidatat nulla. Ad aliqua enim magna irure incididunt aliqua nulla do duis.</p>
                 
             </div>
         </div>
         <div class="grid mt-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Item 1 -->
             @for ($i = 0; $i < 8; $i++)
-            <a href="#" class="border-2 rounded-lg border-blue-400 bg-gray-50 py-6 px-16 text-center transition-transform transform hover:scale-105 hover:shadow-lg">
+            <a href="#" class="border-2 rounded-lg dark:border-black border-blue-400 bg-gray-50 py-6 px-16 text-center transition-transform transform hover:scale-105 hover:shadow-lg">
                 <div class="flex justify-center mb-4">
                     <div class="rounded-full h-20 w-20 flex items-center justify-center">
                         <img src="/images/testt.svg" alt="Placeholder Image" class="rounded-full p-2">

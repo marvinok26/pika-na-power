@@ -1,7 +1,7 @@
 <section class="bg-cover bg-top bg-no-repeat py-12" style="background-image: url('/images/bg.png');">
     <div class="mx-auto max-w-6xl lg:px-0 px-10 pb-10">
         <div class="text-center text-lg">
-            <h2  class="text-3xl dark:text-white text-[#163466] lg:text-5xl mb-6 font-bold lg:py-0">
+            <h2  class="text-3xl text-[#163466] lg:text-5xl mb-6 font-bold lg:py-0">
                 Testimonials
             </h2>
             <div class="owl-carousel owl-carousel-1 owl-theme mt-20">

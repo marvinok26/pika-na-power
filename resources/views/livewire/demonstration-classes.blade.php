@@ -15,11 +15,11 @@
 
                 <form class="mt-6">
                     <div class="mb-6">
-                        <label for="name" class="block text-gray-900 text-base font-bold mb-2">Name (Required)</label>
+                        <label for="name" class="block text-gray-900 dark:text-white text-base font-bold mb-2">Name (Required)</label>
                         <input type="text" id="name" name="name" required class="bg-blue-100  rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-blue-200 focus:border-blue-500">
                     </div>
                     <div class="mb-6">
-                        <label for="email" class="block text-gray-900 text-base font-bold mb-2">Email (Required)</label>
+                        <label for="email" class="block text-gray-900 dark:text-white text-base font-bold mb-2">Email (Required)</label>
                         <input type="email" id="email" name="email" required class="bg-blue-100  rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-blue-200 focus:border-blue-500">
                     </div>
                     <div class="flex items-center justify-between">
