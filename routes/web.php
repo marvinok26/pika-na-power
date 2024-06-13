@@ -21,6 +21,9 @@ Route::get('/articles-resources', function () {
 Route::get('/events', function () {
     return view('pages.events');
 });
+Route::get('/single-event', function () {
+    return view('pages.single-event');
+});
 
 Route::get('/contact-us', function () {
     return view('pages.contact-us');
