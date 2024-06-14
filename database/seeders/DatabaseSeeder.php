@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PageSectionSeeder::class);
         $this->call(BannerSeeder::class);
         $this->call(IntroVideoTextSeeder::class);
+        $this->call(ApplianceSectionSeeder::class);
+        $this->call(ApplianceSeeder::class);
     }
 }
