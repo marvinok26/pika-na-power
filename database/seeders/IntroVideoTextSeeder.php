@@ -25,7 +25,7 @@ class IntroVideoTextSeeder extends Seeder
             'video_url' => 'https://www.youtube.com/embed/KaHWa6kke9M',
             'button_text' => 'Read More',
             'button_url' => '/articles',
-            'page_section_id' => 1,
+            'page_section_id' => 2,
         ]);
     }
 }
