@@ -16,7 +16,7 @@
                 <h1 data-aos="fade-left" data-aos-duration="1500" class="text-4xl lg:text-6xl my-6 font-bold text-white lg:py-0 py-5 ">
                     {{$sectiondata->title}}
                 </h1>
-                <div class="text-white max-w-2xl pb-5">{{$sectiondata->description}}</div>
+                <div class="text-white max-w-2xl pb-5">{!!$sectiondata->description!!}</div>
             </div>
         </div>
     @endif

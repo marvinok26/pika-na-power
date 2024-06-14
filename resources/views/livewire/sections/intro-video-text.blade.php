@@ -11,7 +11,7 @@
                 <!-- Text Column -->
                 <div class="w-full md:w-1/2 px-4">
                     <h2 class="text-2xl font-bold mb-4 dark:text-white text-black">{{$sectiondata->title}}</p>
-                    <div class="dark:text-white text-base text-black">{{$sectiondata->description}}</div>
+                    <div class="dark:text-white text-base text-black">{!!$sectiondata->description!!}</div>
                     <a href={{$sectiondata->button_url}} wire:navigate
                         class="text-white bg-[#163466] mt-8 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2">
                         {{$sectiondata->button_text}}

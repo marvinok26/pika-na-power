@@ -10,7 +10,7 @@
                 </div>
                 <!-- Text Column -->
                 <div class="w-full md:w-1/2 px-4">
-                    <div class=" text-black text-base">{{$sectiondata->description}}</div>   
+                    <div class=" text-black text-base">{!!$sectiondata->description!!}</div>   
                 </div>
             </div>
             <div class="grid mt-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
