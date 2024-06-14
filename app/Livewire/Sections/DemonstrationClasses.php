@@ -4,13 +4,13 @@ namespace App\Livewire\Sections;
 
 use Livewire\Component;
 
-class DemonstrationClass extends Component
+class DemonstrationClasses extends Component
 {
     public $sectiondata;
 
     public function render()
     {
-        return view('livewire.sections.demonstration-class', [
+        return view('livewire.sections.demonstration-classes', [
             'sectiondata' => $this->sectiondata,
         ]);
     }

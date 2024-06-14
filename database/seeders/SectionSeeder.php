@@ -8,6 +8,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Sections\IntroVideoText;
 use App\Models\Sections\ApplianceSection;
 use App\Models\Sections\DemonstrationClass;
+use App\Models\Sections\TestimonialsSection;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class SectionSeeder extends Seeder
@@ -21,7 +22,8 @@ class SectionSeeder extends Seeder
             ['Banner', Banner::class, 'placeholder.png'],
             ['Intro Video Text', IntroVideoText::class, 'placeholder.png'],
             ['Appliances Section', ApplianceSection::class, 'placeholder.png'],
-            ['Demonstration Class', DemonstrationClass::class, 'placeholder.png']
+            ['Demonstration Class', DemonstrationClass::class, 'placeholder.png'],
+            ['Testimonials Section', TestimonialsSection::class, 'placeholder.png']
         ];
 
         foreach ($sections as $section) {

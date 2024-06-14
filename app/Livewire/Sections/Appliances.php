@@ -3,8 +3,9 @@
 namespace App\Livewire\Sections;
 
 use Livewire\Component;
+use App\Models\Content\Appliance;
 
-class Appliance extends Component
+class Appliances extends Component
 {
     public $sectiondata;
     public $appliances;
@@ -16,7 +17,7 @@ class Appliance extends Component
 
     public function render()
     {
-        return view('livewire.sections.appliance', [
+        return view('livewire.sections.appliances', [
             'sectiondata' => $this->sectiondata,
             'appliances' => $this->appliances,
         ]);

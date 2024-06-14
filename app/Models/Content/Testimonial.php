@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models\content;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Testimonial extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'content',
+        'author',
+        'author_location',
+    ];
+}
