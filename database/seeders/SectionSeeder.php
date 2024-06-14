@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Pages\Section;
 use App\Models\Sections\Banner;
 use Illuminate\Database\Seeder;
+use App\Models\Sections\IntroVideoText;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class SectionSeeder extends Seeder
@@ -16,6 +17,7 @@ class SectionSeeder extends Seeder
     {
         $sections = [
             ['Banner', Banner::class, 'placeholder.png'],
+            ['Intro Video Text', IntroVideoText::class, 'placeholder.png'],
         ];
 
         foreach ($sections as $section) {
