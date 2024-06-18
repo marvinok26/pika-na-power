@@ -6,12 +6,15 @@ use App\Models\Pages\PageSection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Breadcrumbs extends Model
+
+class ImageLeftTextRight extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'page_section_id',
+        'image',
+        'description',
     ];
 
     public function page_section()

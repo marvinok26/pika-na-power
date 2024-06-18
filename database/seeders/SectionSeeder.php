@@ -9,6 +9,7 @@ use App\Models\Sections\Breadcrumbs;
 use App\Models\Sections\IntroVideoText;
 use App\Models\Sections\ApplianceSection;
 use App\Models\Sections\DemonstrationClass;
+use App\Models\Sections\ImageLeftTextRight;
 use App\Models\Sections\TestimonialsSection;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -26,6 +27,7 @@ class SectionSeeder extends Seeder
             ['Demonstration Class', DemonstrationClass::class, 'placeholder.png'],
             ['Testimonials Section', TestimonialsSection::class, 'placeholder.png'],
             ['Breadcrumbs', Breadcrumbs::class, 'placeholder.png'],
+            ['Image Left Text Right', ImageLeftTextRight::class, 'placeholder.png'],
         ];
 
         foreach ($sections as $section) {

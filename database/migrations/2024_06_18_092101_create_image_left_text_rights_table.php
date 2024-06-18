@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('breadcrumbs', function (Blueprint $table) {
+        Schema::create('image_left_text_rights', function (Blueprint $table) {
             $table->id();
+            $table->string('image');
+            $table->text('description');
             $table->foreignId('page_section_id')->constrained();
             $table->timestamps();
         });
@@ -23,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('breadcrumbs');
+        Schema::dropIfExists('image_left_text_rights');
     }
 };
