@@ -34,5 +34,16 @@ class PageSeeder extends Seeder
             'meta' => 'This is the about page.',
             'thumbnail' => 'placeholder.png',
         ]);
+
+        Page::create([
+            'name' => 'Classes',
+            'slug' => 'classes',
+            'order' => 3,
+            'in_top_nav' => true,
+            'description' => 'This is the classes page.',
+            'keywords' => 'classes, page, description',
+            'meta' => 'This is the classes page.',
+            'thumbnail' => 'placeholder.png',
+        ]);
     }
 }
