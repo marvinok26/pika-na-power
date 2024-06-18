@@ -3,7 +3,7 @@
 namespace App\Livewire\Sections;
 
 use Livewire\Component;
-use App\Models\content\Benefit;
+use App\Models\Content\Benefit;
 
 class WhyUs extends Component
 {

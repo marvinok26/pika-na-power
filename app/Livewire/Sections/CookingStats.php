@@ -3,7 +3,7 @@
 namespace App\Livewire\Sections;
 
 use Livewire\Component;
-use App\Models\content\Stats;
+use App\Models\Content\Stats;
 
 class CookingStats extends Component
 {

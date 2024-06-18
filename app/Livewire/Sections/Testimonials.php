@@ -3,7 +3,7 @@
 namespace App\Livewire\Sections;
 
 use Livewire\Component;
-use App\Models\content\Testimonial;
+use App\Models\Content\Testimonial;
 
 class Testimonials extends Component
 {
