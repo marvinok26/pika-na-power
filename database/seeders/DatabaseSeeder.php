@@ -2,10 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Seeder;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\Sections\ImageLeftTextRight;
 
 class DatabaseSeeder extends Seeder
 {
@@ -27,5 +25,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TestimonialSectionSeeder::class);
         $this->call(BreadcrumbsSeeder::class);
         $this->call(ImageLeftTextRightSeeder::class);
+        $this->call(WhyUsSeeder::class);
+        $this->call(BenefitsSeeder::class);
     }
 }

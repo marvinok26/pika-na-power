@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Pages\Section;
+use App\Models\Sections\WhyUs;
 use App\Models\Sections\Banner;
 use Illuminate\Database\Seeder;
 use App\Models\Sections\Breadcrumbs;
@@ -28,6 +29,7 @@ class SectionSeeder extends Seeder
             ['Testimonials Section', TestimonialsSection::class, 'placeholder.png'],
             ['Breadcrumbs', Breadcrumbs::class, 'placeholder.png'],
             ['Image Left Text Right', ImageLeftTextRight::class, 'placeholder.png'],
+            ['Why Us', WhyUs::class, 'placeholder.png'],
         ];
 
         foreach ($sections as $section) {
