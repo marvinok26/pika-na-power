@@ -25,5 +25,11 @@ class BannerSeeder extends Seeder
             'image' => '/images/banner.jpeg',
             'page_section_id' => 6,
         ]);
+
+        Banner::create([
+            'title' => 'Our Cooking Classes',
+            'image' => '/images/banner.jpeg',
+            'page_section_id' => 11,
+        ]);
     }
 }

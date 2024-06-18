@@ -16,5 +16,9 @@ class BreadcrumbsSeeder extends Seeder
         Breadcrumbs::create([
             'page_section_id' => 7,
         ]);
+
+        Breadcrumbs::create([
+            'page_section_id' => 12,
+        ]);
     }
 }
