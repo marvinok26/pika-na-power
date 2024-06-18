@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Content\Partner;
 use Illuminate\Database\Seeder;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -27,5 +28,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ImageLeftTextRightSeeder::class);
         $this->call(WhyUsSeeder::class);
         $this->call(BenefitsSeeder::class);
+        $this->call(OurPartnersSeeder::class);
+        $this->call(PartnersSeeder::class);
     }
 }
