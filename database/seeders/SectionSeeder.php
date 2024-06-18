@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Pages\Section;
 use App\Models\Sections\Banner;
 use Illuminate\Database\Seeder;
+use App\Models\Sections\Breadcrumbs;
 use App\Models\Sections\IntroVideoText;
 use App\Models\Sections\ApplianceSection;
 use App\Models\Sections\DemonstrationClass;
@@ -23,7 +24,8 @@ class SectionSeeder extends Seeder
             ['Intro Video Text', IntroVideoText::class, 'placeholder.png'],
             ['Appliances Section', ApplianceSection::class, 'placeholder.png'],
             ['Demonstration Class', DemonstrationClass::class, 'placeholder.png'],
-            ['Testimonials Section', TestimonialsSection::class, 'placeholder.png']
+            ['Testimonials Section', TestimonialsSection::class, 'placeholder.png'],
+            ['Breadcrumbs', Breadcrumbs::class, 'placeholder.png'],
         ];
 
         foreach ($sections as $section) {

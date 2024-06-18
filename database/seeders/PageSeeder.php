@@ -23,5 +23,16 @@ class PageSeeder extends Seeder
             'meta' => 'This is the home page.',
             'thumbnail' => 'placeholder.png',
         ]);
+
+        Page::create([
+            'name' => 'About Us',
+            'slug' => 'about-us',
+            'order' => 2,
+            'in_top_nav' => true,
+            'description' => 'This is the about us page.',
+            'keywords' => 'about, page, description',
+            'meta' => 'This is the about page.',
+            'thumbnail' => 'placeholder.png',
+        ]);
     }
 }
