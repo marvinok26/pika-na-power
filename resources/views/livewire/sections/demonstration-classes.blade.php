@@ -1,6 +1,6 @@
-<div class="py-20">
-    <div class="mx-auto max-w-7xl lg:px-0 px-10">
-        @if ($sectiondata != null)
+@if ($sectiondata != null)
+    <div class="py-20">
+        <div class="mx-auto max-w-7xl lg:px-0 px-10">
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Image Column -->
                 <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
@@ -33,9 +33,8 @@
                             </button>
                         </div>
                     </form>
-                    
                 </div>
             </div>
-        @endif
+        </div>
     </div>
-</div>
+@endif

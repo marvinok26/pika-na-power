@@ -1,7 +1,6 @@
 @if ($sectiondata != null)
     <section class="py-16">
         <div class="mx-auto max-w-7xl lg:px-0 px-10 pb-10">
-            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                 <!-- Video Column -->
                 <div class="flex justify-center">

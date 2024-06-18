@@ -1,5 +1,5 @@
-<section class="bg-cover bg-top bg-no-repeat py-12" style="background-image: url('/images/bg.png');">
-    @if ($sectiondata != null)
+@if ($sectiondata != null)
+    <section class="bg-cover bg-top bg-no-repeat py-12" style="background-image: url('/images/bg.png');">
         <div class="mx-auto max-w-7xl lg:px-0 px-10 pb-10">
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Video Column -->
@@ -31,5 +31,5 @@
                 @endforeach
             </div>
         </div>
-    @endif
-</section>
+    </section>
+@endif

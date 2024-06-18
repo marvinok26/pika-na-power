@@ -1,5 +1,5 @@
-<div>
-    @if($breadcrumbs != null)
+@if($breadcrumbs != null)
+    <div>
         <div class="bg-gray-50 dark:bg-gray-950 border-b border-gray-300 dark:border-gray-800">
             <div class="mx-auto max-w-7xl">
                 <nav class="flex md:justify-start justify-center py-5" aria-label="Breadcrumb">
@@ -21,5 +21,5 @@
                 </nav>
             </div>
         </div>
-    @endif
-</div>
+    </div>
+@endif
