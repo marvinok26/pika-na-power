@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\content\Benefit;
+use App\Models\Content\Benefit;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 

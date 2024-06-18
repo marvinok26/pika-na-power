@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\content\Testimonial;
 use App\Models\Sections\TestimonialsSection;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
