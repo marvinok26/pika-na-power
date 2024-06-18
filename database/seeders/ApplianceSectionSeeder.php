@@ -18,5 +18,11 @@ class ApplianceSectionSeeder extends Seeder
             'description' => 'Irure esse eiusmod veniam mollit ut fugiat ad nulla laboris ullamco aute et. Voluptate ullamco aute id ullamco ex minim. Veniam labore sunt occaecat. Ut eiusmod irure ipsum elit quis duis eu non voluptate reprehenderit occaecat eu irure.',
             'page_section_id' => 3,
         ]);
+
+        ApplianceSection::create([
+            'title' => 'Energy Efficient Appliances',
+            'description' => 'Irure esse eiusmod veniam mollit ut fugiat ad nulla laboris ullamco aute et. Voluptate ullamco aute id ullamco ex minim. Veniam labore sunt occaecat. Ut eiusmod irure ipsum elit quis duis eu non voluptate reprehenderit occaecat eu irure.',
+            'page_section_id' => 15,
+        ]);
     }
 }

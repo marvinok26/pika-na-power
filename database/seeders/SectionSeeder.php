@@ -7,6 +7,7 @@ use App\Models\Sections\WhyUs;
 use App\Models\Sections\Banner;
 use Illuminate\Database\Seeder;
 use App\Models\Sections\Breadcrumbs;
+use App\Models\Sections\LatestVideo;
 use App\Models\Sections\OurPartners;
 use App\Models\Sections\CookingStats;
 use App\Models\Sections\IntroVideoText;
@@ -33,7 +34,8 @@ class SectionSeeder extends Seeder
             ['Image Left Text Right', ImageLeftTextRight::class, 'placeholder.png'],
             ['Why Us', WhyUs::class, 'placeholder.png'],
             ['Our Partners', OurPartners::class, 'placeholder.png'],
-            ['Cooking Stats', CookingStats::class, 'placeholder.png']
+            ['Cooking Stats', CookingStats::class, 'placeholder.png'],
+            ['Latest Videos', LatestVideo::class, 'placeholder.png']
         ];
 
         foreach ($sections as $section) {
