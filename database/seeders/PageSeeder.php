@@ -60,11 +60,22 @@ class PageSeeder extends Seeder
         Page::create([
             'name' => 'Events',
             'slug' => 'events',
-            'order' => 4,
+            'order' => 5,
             'in_top_nav' => true,
             'description' => 'This is the events page.',
             'keywords' => 'events, page, description',
             'meta' => 'This is the events page.',
+            'thumbnail' => 'placeholder.png',
+        ]);
+
+        Page::create([
+            'name' => 'Contact Us',
+            'slug' => 'contact-us',
+            'order' => 6,
+            'in_top_nav' => true,
+            'description' => 'This is the contact us page.',
+            'keywords' => 'contact, page, description',
+            'meta' => 'This is the contact page.',
             'thumbnail' => 'placeholder.png',
         ]);
     }

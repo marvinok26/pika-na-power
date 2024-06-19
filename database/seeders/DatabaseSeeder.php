@@ -43,5 +43,8 @@ class DatabaseSeeder extends Seeder
         $this->call(EventSectionSeeder::class);
         $this->call(EventSeeder::class);
         $this->call(EventImageSeeder::class);
+        $this->call(ContactSubBannerSeeder::class);
+        $this->call(ContactFormSeeder::class);
+        $this->call(ContactSeeder::class);
     }
 }
