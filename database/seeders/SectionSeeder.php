@@ -10,6 +10,7 @@ use App\Models\Sections\Breadcrumbs;
 use App\Models\Sections\LatestVideo;
 use App\Models\Sections\OurPartners;
 use App\Models\Sections\CookingStats;
+use App\Models\Sections\ShopsSection;
 use App\Models\Sections\IntroVideoText;
 use App\Models\Sections\ArticlesSection;
 use App\Models\Sections\ApplianceSection;
@@ -39,7 +40,8 @@ class SectionSeeder extends Seeder
             ['Cooking Stats', CookingStats::class, 'placeholder.png'],
             ['Latest Videos', LatestVideo::class, 'placeholder.png'],
             ['Articles Section', ArticlesSection::class, 'placeholder.png'],
-            ['Resources Section', ResourcesSection::class, 'placeholder.png']
+            ['Resources Section', ResourcesSection::class, 'placeholder.png'],
+            ['Shops Section', ShopsSection::class, 'placeholder.png']
         ];
 
         foreach ($sections as $section) {
