@@ -35,6 +35,10 @@ class PageSectionSeeder extends Seeder
             ['page_id' => 3, 'section_id' => 11, 'order' => 4,],
             ['page_id' => 3, 'section_id' => 3, 'order' => 5,],
             ['page_id' => 3, 'section_id' => 4, 'order' => 6,],
+
+            // Articles & Resources page
+            ['page_id' => 4, 'section_id' => 1, 'order' => 1,],
+            ['page_id' => 4, 'section_id' => 6, 'order' => 2,],
         ];
 
         foreach ($pageSections as $pageSection) {

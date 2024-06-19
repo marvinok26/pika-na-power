@@ -31,5 +31,11 @@ class BannerSeeder extends Seeder
             'image' => '/images/banner.jpeg',
             'page_section_id' => 11,
         ]);
+
+        Banner::create([
+            'title' => 'Articles & Resources',
+            'image' => '/images/banner.jpeg',
+            'page_section_id' => 17,
+        ]);
     }
 }

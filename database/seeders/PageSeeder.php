@@ -45,5 +45,16 @@ class PageSeeder extends Seeder
             'meta' => 'This is the classes page.',
             'thumbnail' => 'placeholder.png',
         ]);
+
+        Page::create([
+            'name' => 'Articles & Resources',
+            'slug' => 'articles-resources',
+            'order' => 4,
+            'in_top_nav' => true,
+            'description' => 'This is the articles & resources page.',
+            'keywords' => 'articles, resources, page, description',
+            'meta' => 'This is the articles & resources page.',
+            'thumbnail' => 'placeholder.png',
+        ]);
     }
 }
