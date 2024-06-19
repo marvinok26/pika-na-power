@@ -5,13 +5,12 @@ namespace App\Models\Content;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Contact extends Model
+class FooterPage extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'title',
-        'subtitle',
-        'icon',
+        'content',
     ];
 }

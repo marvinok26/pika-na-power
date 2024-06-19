@@ -46,5 +46,9 @@ class DatabaseSeeder extends Seeder
         $this->call(ContactSubBannerSeeder::class);
         $this->call(ContactFormSeeder::class);
         $this->call(ContactSeeder::class);
+        $this->call(SocialSeeder::class);
+        $this->call(FooterPageSeeder::class);
+        $this->call(FooterLinkSeeder::class);
+        $this->call(QuickLinkSeeder::class);
     }
 }
