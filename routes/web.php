@@ -2,32 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Pages\EventController;
+use App\Http\Controllers\Pages\PagesController;
+use App\Http\Controllers\Pages\InvokePagesController;
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', InvokePagesController::class)->name('index');
 
-Route::get('/about-us', function () {
-    return view('pages.about');
-});
-
-Route::get('/classes', function () {
-    return view('pages.classes');
-});
-
-Route::get('/articles-resources', function () {
-    return view('pages.articles-resources');
-});
-
-Route::get('/events', function () {
-    return view('pages.events');
-});
 Route::get('/single-event', function () {
     return view('pages.single-event');
 });
 
-Route::get('/contact-us', function () {
-    return view('pages.contact-us');
-});
-
 Route::get('/events/{slug}', EventController::class)->name('events.show');
+
+Route::get('/{page:slug}', PagesController::class)->name('page.show');

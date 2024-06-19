@@ -6,7 +6,7 @@
                 <div
                     class="col-span-1 flex-grow rounded-lg min-h-96 bg-cover bg-center overflow-hidden bg-light dark:bg-slate-950 border border-sky-300 dark:border-sky-700">
                     <iframe
-                        src={{$sectiondats->map_url}}
+                        src={{$sectiondata->map_url}}
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>

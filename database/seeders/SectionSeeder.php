@@ -47,7 +47,7 @@ class SectionSeeder extends Seeder
             ['Shops Section', ShopsSection::class, 'placeholder.png'],
             ['Events Section', EventsSection::class, 'placeholder.png'],
             ['Contact Sub Banner', ContactSubBanner::class, 'placeholder.png'],
-            ['Contact Us', ContactForm::class, 'placeholder.png'],
+            ['Contact Form', ContactForm::class, 'placeholder.png'],
         ];
 
         foreach ($sections as $section) {

@@ -1,9 +1,7 @@
 <x-app-layout>
-    <div>
-        <livewire:page-banner/>
-        <livewire:intro-video-text/>
-        <livewire:appliances/>
-        <livewire:demonstration-classes/>
-        <livewire:testimonials/>
-    </div>
+
+    @foreach($page->sections->sortBy('pivot.order') as $section)
+        <livewire:pages.sections :section="$section"/>
+    @endforeach
+
 </x-app-layout>
