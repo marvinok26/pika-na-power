@@ -11,6 +11,7 @@ use App\Models\Sections\LatestVideo;
 use App\Models\Sections\OurPartners;
 use App\Models\Sections\CookingStats;
 use App\Models\Sections\IntroVideoText;
+use App\Models\Sections\ArticlesSection;
 use App\Models\Sections\ApplianceSection;
 use App\Models\Sections\DemonstrationClass;
 use App\Models\Sections\ImageLeftTextRight;
@@ -35,7 +36,8 @@ class SectionSeeder extends Seeder
             ['Why Us', WhyUs::class, 'placeholder.png'],
             ['Our Partners', OurPartners::class, 'placeholder.png'],
             ['Cooking Stats', CookingStats::class, 'placeholder.png'],
-            ['Latest Videos', LatestVideo::class, 'placeholder.png']
+            ['Latest Videos', LatestVideo::class, 'placeholder.png'],
+            ['Articles Section', ArticlesSection::class, 'placeholder.png']
         ];
 
         foreach ($sections as $section) {

@@ -34,5 +34,7 @@ class DatabaseSeeder extends Seeder
         $this->call(StatsSeeder::class);
         $this->call(LatestVideosSeeder::class);
         $this->call(VideosSeeder::class);
+        $this->call(ArticlesSectionSeeder::class);
+        $this->call(ArticlesSeeder::class);
     }
 }
