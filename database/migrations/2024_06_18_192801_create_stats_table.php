@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('value');
             $table->string('title');
-            $table->string('sub_title');
+            $table->string('subtitle');
             $table->timestamps();
         });
     }

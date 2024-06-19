@@ -16,19 +16,19 @@ class StatsSeeder extends Seeder
         Stats::create([
             'title' => 'Professional',
             'value' => '12',
-            'sub_title' => 'Trainers',
+            'subtitle' => 'Trainers',
         ]);
 
         Stats::create([
             'title' => 'Interactive',
             'value' => '534',
-            'sub_title' => 'Sessions',
+            'subtitle' => 'Sessions',
         ]);
 
         Stats::create([
             'title' => 'Delicious',
             'value' => '312',
-            'sub_title' => 'Meals Cooked',
+            'subtitle' => 'Meals Cooked',
         ]);
     }
 }

@@ -12,6 +12,6 @@ class Stats extends Model
     protected $fillable = [
         'title',
         'value',
-        'sub_title',
+        'subtitle',
     ];
 }
