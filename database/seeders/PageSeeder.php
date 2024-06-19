@@ -56,5 +56,16 @@ class PageSeeder extends Seeder
             'meta' => 'This is the articles & resources page.',
             'thumbnail' => 'placeholder.png',
         ]);
+
+        Page::create([
+            'name' => 'Events',
+            'slug' => 'events',
+            'order' => 4,
+            'in_top_nav' => true,
+            'description' => 'This is the events page.',
+            'keywords' => 'events, page, description',
+            'meta' => 'This is the events page.',
+            'thumbnail' => 'placeholder.png',
+        ]);
     }
 }

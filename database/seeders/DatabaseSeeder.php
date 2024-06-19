@@ -40,5 +40,8 @@ class DatabaseSeeder extends Seeder
         $this->call(ResourcesSeeder::class);
         $this->call(ShopsSectionSeeder::class);
         $this->call(ShopsSeeder::class);
+        $this->call(EventSectionSeeder::class);
+        $this->call(EventSeeder::class);
+        $this->call(EventImageSeeder::class);
     }
 }
