@@ -4,6 +4,7 @@
         <livewire:breadcrumbs/>
         <livewire:search/>
         <livewire:articles/>
+        <livewire:pagination/>
         <livewire:resources/>
         <livewire:shops/>
        
