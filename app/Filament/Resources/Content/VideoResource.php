@@ -1,35 +1,37 @@
 <?php
 
-namespace App\Filament\Resources\Sections;
+namespace App\Filament\Resources\Content;
 
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use App\Models\Content\Video;
 use Filament\Resources\Resource;
-use App\Models\Sections\OurPartners;
-use Filament\Forms\Components\Tabs\Tab;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Sections\OurPartnersResource\Pages;
-use App\Filament\Resources\Sections\OurPartnersResource\RelationManagers;
+use App\Filament\Resources\Content\VideoResource\Pages;
+use App\Filament\Resources\Content\VideoResource\RelationManagers;
 
-class OurPartnersResource extends Resource
+class VideoResource extends Resource
 {
-    protected static ?string $model = OurPartners::class;
-    protected static ?string $navigationGroup = 'Sections';
-    protected static ?string $navigationIcon = 'heroicon-s-puzzle-piece';
+    protected static ?string $model = Video::class;
+    protected static ?string $navigationGroup = 'Content';
+    protected static ?string $navigationIcon = 'heroicon-s-play-circle';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title')
-                    ->maxLength(255)
                     ->required(),
-                // Forms\Components\Select::make('page_section_id')
-                //     ->relationship('page_section', 'name')
-                //     ->required(),
+                Forms\Components\DatePicker::make('date')
+                    ->required(),
+                Forms\Components\TextInput::make('url')
+                    ->required(),
+                Forms\Components\FileUpload::make('thumbnail')
+                    ->image()
+                    ->required(),
             ]);
     }
 
@@ -40,7 +42,12 @@ class OurPartnersResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('page_section.page.name')
+                Tables\Columns\TextColumn::make('date')
+                    ->date(),
+                Tables\Columns\TextColumn::make('url')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\ImageColumn::make('thumbnail')
                     ->searchable()
                     ->sortable(),
             ])
@@ -67,9 +74,9 @@ class OurPartnersResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListOurPartners::route('/'),
-            'create' => Pages\CreateOurPartners::route('/create'),
-            'edit' => Pages\EditOurPartners::route('/{record}/edit'),
+            'index' => Pages\ListVideos::route('/'),
+            'create' => Pages\CreateVideo::route('/create'),
+            'edit' => Pages\EditVideo::route('/{record}/edit'),
         ];
     }
 }

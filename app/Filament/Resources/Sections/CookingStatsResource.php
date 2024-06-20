@@ -17,7 +17,7 @@ class CookingStatsResource extends Resource
 {
     protected static ?string $model = CookingStats::class;
     protected static ?string $navigationGroup = 'Sections';
-    protected static ?string $navigationIcon = 'heroicon-o-calculator';
+    protected static ?string $navigationIcon = 'heroicon-o-newspaper';
 
     public static function form(Form $form): Form
     {

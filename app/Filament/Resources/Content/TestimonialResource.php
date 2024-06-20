@@ -1,32 +1,34 @@
 <?php
 
-namespace App\Filament\Resources\Sections;
+namespace App\Filament\Resources\Content;
 
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
-use App\Models\Sections\ContactForm;
+use App\Models\Content\Testimonial;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Sections\ContactFormResource\Pages;
-use App\Filament\Resources\Sections\ContactFormResource\RelationManagers;
+use App\Filament\Resources\Content\TestimonialResource\Pages;
+use App\Filament\Resources\Content\TestimonialResource\RelationManagers;
 
-class ContactFormResource extends Resource
+class TestimonialResource extends Resource
 {
-    protected static ?string $model = ContactForm::class;
-    protected static ?string $navigationGroup = 'Sections';
-    protected static ?string $navigationIcon = 'heroicon-m-book-open';
+    protected static ?string $model = Testimonial::class;
+    protected static ?string $navigationGroup = 'Content';
+    protected static ?string $navigationIcon = 'heroicon-o-squares-plus';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('title')
-                    ->maxLength(255)
+                Forms\Components\RichEditor::make('content')
+                    ->required()
+                    ->columnSpan('full'),
+                Forms\Components\TextInput::make('author')
                     ->required(),
-                Forms\Components\TextInput::make('map_url')
+                Forms\Components\TextInput::make('author_location')
                     ->required(),
             ]);
     }
@@ -35,14 +37,14 @@ class ContactFormResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title')
+                Tables\Columns\TextColumn::make('content')
+                    ->limit(100)
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('map_url')
-                    ->limit(50)
+                Tables\Columns\TextColumn::make('author')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('page_section.page.name')
+                Tables\Columns\TextColumn::make('author_location')
                     ->searchable()
                     ->sortable(),
             ])
@@ -69,9 +71,9 @@ class ContactFormResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListContactForms::route('/'),
-            'create' => Pages\CreateContactForm::route('/create'),
-            'edit' => Pages\EditContactForm::route('/{record}/edit'),
+            'index' => Pages\ListTestimonials::route('/'),
+            'create' => Pages\CreateTestimonial::route('/create'),
+            'edit' => Pages\EditTestimonial::route('/{record}/edit'),
         ];
     }
 }

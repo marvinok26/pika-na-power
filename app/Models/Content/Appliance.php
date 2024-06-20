@@ -11,7 +11,7 @@ class Appliance extends Model
 
     protected $fillable = [
         'image',
-        'description',
+        'title',
         'button_text',
         'button_url',
     ];
