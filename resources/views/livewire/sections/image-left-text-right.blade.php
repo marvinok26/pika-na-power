@@ -5,10 +5,9 @@
                 <!-- Video Column -->
                 <div class="flex justify-center">
                     <div class="relative pb-9/16">
-                        <img src={{$sectiondata->image}}class="w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg" alt="">
+                        <img src={{$sectiondata->image}} class="w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg" alt="">
                     </div>
                 </div>
-                
                 <!-- Text Column -->
                 <div class="flex flex-col justify-center">
                     {{-- <h2 class="text-2xl font-bold mb-4 dark:text-white text-black">Embrace Clean Technologies for a Greener Cooking Future with Pika na Power!</h2> --}}

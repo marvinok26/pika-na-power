@@ -16,7 +16,7 @@
             <div class="grid mt-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- Item 1 -->
                 @foreach ($appliances as $appliance)
-                    <a href={{$appliance->button_link}} class="border-2 rounded-lg border-blue-400 dark:border-black bg-gray-50 p-6 text-center transition-transform transform hover:scale-105 hover:shadow-lg">
+                    <a href={{$appliance->button_url}} class="border-2 rounded-lg border-blue-400 dark:border-black bg-gray-50 p-6 text-center transition-transform transform hover:scale-105 hover:shadow-lg">
                         <div class="flex justify-center mb-4">
                             <img src={{$appliance->image}} alt="Placeholder Image" class="circle rounded-full p-2">
                         </div>

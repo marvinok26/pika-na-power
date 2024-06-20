@@ -18,11 +18,11 @@
             <!-- Item 1 -->
             <div class="owl-carousel owl-carousel-2 owl-theme mt-5">
                 @foreach ($partners as $partner)
-                <div class="item">
-                    <div class="border-2 rounded-lg border-blue-400 dark:border-black bg-gray-50 p-6 text-center hover:border-blue-800">
-                        <img src={{$partner->logo}} class="h-28 object-contain" alt="">
+                    <div class="item">
+                        <div class="border-2 rounded-lg border-blue-400 dark:border-black bg-gray-50 p-6 text-center hover:border-blue-800">
+                            <img src={{$partner->logo}} class="h-28 object-contain" alt="">
+                        </div>
                     </div>
-                </div>
                 @endforeach
             </div>
             

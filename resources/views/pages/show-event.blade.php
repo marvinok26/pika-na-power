@@ -74,14 +74,14 @@
             <div class="bg-white dark:bg-gray-950 bg-center py-12 sm:py-16">
                 <div class="mx-auto lg:px-0 px-10 max-w-7xl">
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-                        @foreach ($event->images as $index => $post)
+                        @foreach ($event->images as $post)
                             <div>
                                 <img class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
-                                    wire:click="selectPost({{ $index }})" src="{{ $post->url }}" alt="">
+                                     src="{{ $post->url }}" alt="">
                             </div>
                         @endforeach
                     </div>
-                    @if ($showModal)
+                    {{-- @if ($showModal)
                         <div x-data="{ showModal: @entangle('showModal') }" x-show="showModal"
                             class="fixed z-50 inset-0 overflow-y-auto flex items-center justify-center">
                             <div class="fixed inset-0 transition-opacity" aria-hidden="true" x-show="showModal"
@@ -131,7 +131,7 @@
                                 </button>
                             </div>
                         </div>
-                    @endif
+                    @endif --}}
                 </div>
             </div>
         @endif
