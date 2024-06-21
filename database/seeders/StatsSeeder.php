@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\content\Stats;
+use App\Models\Content\Stats;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
