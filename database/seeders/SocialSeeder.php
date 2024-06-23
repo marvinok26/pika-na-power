@@ -16,32 +16,32 @@ class SocialSeeder extends Seeder
         $socials = [
             [
                 'name' => 'Facebook',
-                'icon' => 'images/fb.svg',
+                'icon' => 'images/facebook.png',
                 'url' => 'https://www.facebook.com',
             ],
             [
                 'name' => 'Instagram',
-                'icon' => 'images/fb.svg',
+                'icon' => 'images/instagram.png',
                 'url' => 'https://www.instagram.com',
             ],
             [
                 'name' => 'X',
-                'icon' => 'images/fb.svg',
+                'icon' => 'images/x.png',
                 'url' => 'https://www.twitter.com',
             ],
             [
                 'name' => 'Youtube',
-                'icon' => 'images/fb.svg',
+                'icon' => 'images/youtube.png',
                 'url' => 'https://www.youtube.com',
             ],
             [
                 'name' => 'WhatsApp',
-                'icon' => 'images/fb.svg',
+                'icon' => 'images/whatsapp.png',
                 'url' => 'https://www.whatsapp.com',
             ],
             [
                 'name' => 'TikTok',
-                'icon' => 'images/fb.svg',
+                'icon' => 'images/tiktok.png',
                 'url' => 'https://www.tiktok.com',
             ]
         ];
