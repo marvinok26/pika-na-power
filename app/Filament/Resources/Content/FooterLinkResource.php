@@ -25,7 +25,11 @@ class FooterLinkResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('title')
+                    ->required(),
+                Forms\Components\TextInput::make('url')
+                    ->label('URL')
+                    ->required(),
             ]);
     }
 
@@ -33,7 +37,12 @@ class FooterLinkResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('title')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('url')
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
                 //

@@ -24,7 +24,11 @@ class SocialResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('name')
+                    ->required(),
+                Forms\Components\TextInput::make('url')
+                    ->label('URL')
+                    ->required(),
             ]);
     }
 
@@ -32,7 +36,12 @@ class SocialResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('name')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('url')
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
                 //

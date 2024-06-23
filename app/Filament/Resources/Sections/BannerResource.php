@@ -8,6 +8,7 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use App\Models\Sections\Banner;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
@@ -29,12 +30,17 @@ class BannerResource extends Resource
                 TextInput::make('title')
                     ->maxLength(255)
                     ->required(),
-                RichEditor::make('description')
-                    ->required()
-                    ->columnSpan('full'),
-                FileUpload::make('image')
-                    ->image()
+                Select::make('page_sections_id')
+                    ->relationship(name: 'page_section.page', titleAttribute: 'name')
+                    ->label('Page')
+                    ->searchable()
+                    ->preload()
                     ->required(),
+                FileUpload::make('image')
+                    ->required()
+                    ->columnSpanFull(),
+                RichEditor::make('description')
+                    ->columnSpan('full'),
             ]);
     }
 

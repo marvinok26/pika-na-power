@@ -71,7 +71,7 @@
             </div>
 
             <div class="w-full sm:w-1/2 sm:mt-0">
-                <h3 class="text-2xl text-[#163466] dark:text-[#FACA21] font-semibold mb-4">Quick Links</h3>
+                <h3 class="text-2xl text-[#163466] dark:text-[#FACA21] font-semibold mb-4">Links</h3>
                 <nav class="flex flex-col sm:flex-row text-start justify-normal gap-6">
                     
                         <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">Privacy Policy</a>
