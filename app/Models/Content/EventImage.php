@@ -10,7 +10,7 @@ class EventImage extends Model
     use HasFactory;
 
     protected $fillable = [
-        'image',
+        'url',
         'event_id',
     ];
 

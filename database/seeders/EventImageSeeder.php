@@ -14,62 +14,62 @@ class EventImageSeeder extends Seeder
     public function run(): void
     {
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
 
         EventImage::create([
-            'image' => '/images/banner.jpeg',
+            'url' => '/images/banner.jpeg',
             'event_id' => 1,
         ]);
     }
