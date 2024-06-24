@@ -1,6 +1,6 @@
 <div class="bg-white dark:bg-gray-950">
     <div class="bg-[#FACA21] py-5">
-       <div class="lg:px-0 px-10 mx-auto max-w-7xl">
+        <div class="lg:px-0 px-10 mx-auto max-w-7xl">
             <div class="py-2 sm:flex sm:justify-between items-center">
                 <!-- 1/3 Section (Quick Links) -->
                 <div class="sm:w-1/4">
@@ -10,13 +10,14 @@
 
                 <!-- 2/3 Section (Navigation with Icons) -->
                 <nav class="sm:w-3/4 flex flex-col sm:flex-row sm:justify-between sm:items-center">
-                    @for($i = 0; $i < 4; $i++)
-                    <a href="#" class="flex text-base w-50 items-center text-[#163466] font-bold hover:text-gray-900 py-2 px-3">
-                        <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
-                       <span class="w-25 text-base">Press Releases</span>
-                    </a>
+                    @for ($i = 0; $i < 4; $i++)
+                        <a href="#"
+                            class="flex text-base w-50 items-center text-[#163466] font-bold hover:text-gray-900 py-2 px-3">
+                            <img src="/images/badge.svg" class="w-12 h-12 mr-3" alt="">
+                            <span class="w-25 text-base">Press Releases</span>
+                        </a>
                     @endfor
-                   
+
                 </nav>
             </div>
         </div>
@@ -24,9 +25,10 @@
 
     <div class="bg-[#163466]">
         <div class="mx-auto px-10  py-6">
-            <div class="grid grid-cols-2 mx-auto text-center justify-center  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-20">
-                
-                
+            <div
+                class="grid grid-cols-2 mx-auto text-center justify-center  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-20">
+
+
                 <a href="#" class="flex justify-center items-center">
                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -64,8 +66,7 @@
                     </svg>
                     <span class="ml-2 text-base text-white">YouTube</span>
                 </a>
-                <a href="#"
-                    class="flex items-center">
+                <a href="#" class="flex items-center">
                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -92,49 +93,50 @@
                     </svg>
                     <span class="ml-2 text-base text-white">TikTok</span>
                 </a>
-                
+
                 <!--[if ENDBLOCK]><![endif]-->
             </div>
         </div>
     </div>
-    <div class="mx-auto  max-w-7xl lg:px-0 px-10 py-6">
-        <div class="flex flex-row justify-center gap-x-20">
-            <!-- Left Column -->
-            <div class="w-full sm:w-1/2">
-                <h3 class="text-xl text-[#163466] dark:text-[#FACA21] font-semibold mb-2">Categories</h3>
-                <nav class="flex flex-col sm:flex-row gap-x-6">
-                    @for($i = 0; $i < 4; $i++)
-                    <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 ">Nav Item 1</a>
-                    @endfor
-                </nav>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-6">
+        <div class="gap-6 flex flex-wrap lg:flex-row justify-between">
+            <div class="col-span-1">
+                <div class="flex flex-col items-start lg:items-start gap-y-2.5">
+                    <h3 class="text-[#163466] font-semibold	 dark:text-slate-100 text-2xl">Pages</h3>
+                    <div class="flex flex-wrap lg:flex-row gap-x-5 gap-y-3 text-primary dark:text-slate-400 text-sm">
+
+                        <a href="#">E-Mobility</a>
+                        
+                    </div>
+                </div>
             </div>
-    
-            <!-- Right Column -->
-            <div class="w-full sm:w-1/2 sm:mt-0">
-                <h3 class="text-xl text-[#163466] dark:text-[#FACA21] font-semibold mb-2">Links</h3>
-                <nav class="flex flex-col sm:flex-row gap-x-6">
-                    @for($i = 0; $i < 4; $i++)
-                    <a href="#" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 ">Some Link </a>
-                    @endfor
-                </nav>
+            <div class="col-span-1">
+                <div class="flex flex-col items-start lg:items-start gap-y-2.5">
+                    <h3 class="text-[#163466] font-semibold	 dark:text-slate-100 text-2xl">Links</h3>
+                    <div class="flex flex-wrap lg:flex-row gap-x-5 gap-y-3 text-primary dark:text-slate-400 text-sm">
+                        <a href="/privacy-policy">Privacy Policy</a>
+                        <a href="/terms-conditions">Terms &amp; Conditions</a>
+                        <a href="/contact-us-footer">Contact Us</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="mx-auto lg:px-0 px-10 max-w-7xl border rounded border-[#95D6FD] dark:border-white ">
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            @for($i = 0; $i < 5; $i++)
-            <div class="flex items-start text-left p-4">
-                <img src="/images/testt.svg" alt="Icon 1" class="w-12 h-12 mr-4">
-                <div>
-                    <h3 class="text-base dark:text-white text-gray-600 font-normal mb-1">USSD</h3>
-                    <p class="text-lg font-bold text-[#163466]">*997#</p>
+            @for ($i = 0; $i < 5; $i++)
+                <div class="flex items-start text-left p-4">
+                    <img src="/images/testt.svg" alt="Icon 1" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="text-base dark:text-white text-gray-600 font-normal mb-1">USSD</h3>
+                        <p class="text-lg font-bold text-[#163466]">*997#</p>
+                    </div>
                 </div>
-            </div>
             @endfor
-    
-           
-    
-            
+
+
+
+
         </div>
     </div>
     <div class="text-center py-4 dark:text-white text-gray-600">
