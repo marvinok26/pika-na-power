@@ -38,36 +38,42 @@
             </div>  
         </div>
     </div>
-    <div class="mx-auto  max-w-6xl lg:px-0 px-10 py-6">
-        <div class="flex flex-row justify-center gap-x-20">
-            <div class="w-full sm:w-1/2">
-                <h3 class="text-2xl text-[#163466] dark:text-[#FACA21] font-semibold mb-4">Pages</h3>
-                <nav class="flex flex-col sm:flex-row justify-normal gap-6">
-                    @if(!empty($footerPages))
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-6">
+        <div class="gap-6 flex flex-wrap lg:flex-row justify-between">
+            <div class="col-span-1">
+                <div class="flex flex-col items-start lg:items-start gap-y-2.5">
+                    <h3 class="text-[#163466] font-semibold	 dark:text-slate-100 text-2xl">Pages</h3>
+                    <div class="flex flex-wrap lg:flex-row gap-x-5 gap-y-3 text-primary dark:text-slate-400 text-base">
+
+                        @if(!empty($footerPages))
                         @foreach($footerPages as $footerPage)
                             <a href="{{ $footerPage['url'] }}" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">
                                 {{ $footerPage['title'] }}
                             </a>
                         @endforeach
                     @endif
-                </nav>
+                        
+                    </div>
+                </div>
             </div>
-
-            <div class="w-full sm:w-1/2 sm:mt-0">
-                <h3 class="text-2xl text-[#163466] dark:text-[#FACA21] font-semibold mb-4">Links</h3>
-                <nav class="flex flex-col sm:flex-row text-start justify-normal gap-6">
-                    @if(!empty($footerLinks))
+            <div class="col-span-1">
+                <div class="flex flex-col items-start lg:items-start gap-y-2.5">
+                    <h3 class="text-[#163466] font-semibold	 dark:text-slate-100 text-2xl">Links</h3>
+                    <div class="flex flex-wrap lg:flex-row gap-x-5 gap-y-3 text-primary dark:text-slate-400 text-sm">
+                        @if(!empty($footerLinks))
                         @foreach($footerLinks as $footerLink)
-                            <a href="{{ $footerLink['url'] }}" class="text-gray-800 dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">
+                            <a href="{{ $footerLink['url'] }}" class="text-gray-800 text-base dark:text-white hover:underline hover:underline-offset-4 pe-2 py-1">
                                 {{ $footerLink['title'] }}
                             </a>
                         @endforeach
                     @endif
-                </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="mx-auto lg:px-0 px-10 max-w-6xl border rounded border-blue-200 dark:border-white ">
+    
+    <div class="mx-auto lg:px-0 px-10 max-w-7xl border rounded border-blue-200 dark:border-white ">
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             @if(!empty($contacts))
                 @foreach($contacts as $contact)
@@ -77,8 +83,8 @@
                             <img src="{{ asset($contact->icon) }}" alt="">                                    
                         </div>
                         <div>
-                            <h3 class="text-base font-semibold mb-1">{{ $contact->title }}</h3>
-                            <p class="text-base text-[#163466]">{{ $contact->subtitle }}</p>
+                            <h3 class="text-sm dark:text-white text-[#646971] font-normal	 mb-1">{{ $contact->title }}</h3>
+                            <p class="text-base dark:text-gray-400 text-[#163466]">{{ $contact->subtitle }}</p>
                         </div>
                     </div>
                 @endforeach
