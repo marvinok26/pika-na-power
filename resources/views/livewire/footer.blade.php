@@ -1,10 +1,10 @@
 <div class="bg-white dark:bg-gray-950">
     <div class="bg-[#FACA21] py-5">
-        <div class="lg:px-0 px-10 mx-auto max-w-7xl">
-            <div class="py-2 px-6 sm:flex sm:justify-between items-center">
+       <div class="lg:px-0 px-10 mx-auto max-w-7xl">
+            <div class="py-2 sm:flex sm:justify-between items-center">
                 <!-- 1/3 Section (Quick Links) -->
                 <div class="sm:w-1/4">
-                    <h2 class="text-3xl font-bold tracking-tight lg:pb-0 pb-5 text-[#163466] sm:text-4xl">Quick Links
+                    <h2 class="text-4xl font-normal tracking-tight lg:pb-0 pb-5 text-[#163466] sm:text-5xl">Quick Links
                     </h2>
                 </div>
                 <nav class="sm:w-3/4 flex flex-col sm:flex-row sm:justify-between sm:items-center">
