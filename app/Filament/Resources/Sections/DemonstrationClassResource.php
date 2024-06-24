@@ -32,7 +32,8 @@ class DemonstrationClassResource extends Resource
                 Forms\Components\RichEditor::make('description')
                     ->required()
                     ->columnSpan('full'),
-                Forms\Components\FileUpload::make('image'),
+                Forms\Components\FileUpload::make('image')
+                    ->columnSpan('full'),
                 // Forms\Components\Select::make('page_section_id')
                 //     ->relationship('page_section', 'name')
                 //     ->required(),

@@ -18,6 +18,8 @@ class ImageLeftTextRightResource extends Resource
     protected static ?string $model = ImageLeftTextRight::class;
     protected static ?string $navigationGroup = 'Sections';
     protected static ?string $navigationIcon = 'heroicon-c-clipboard-document-list';
+    protected static ?string $modelLabel = 'Image Left Text Right';
+    protected static ?string $pluralModelLabel = 'Image Left Text Right';
 
     public static function form(Form $form): Form
     {

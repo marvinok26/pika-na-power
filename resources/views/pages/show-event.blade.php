@@ -76,7 +76,7 @@
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
                         @foreach ($event->images as $image)
                             <a href="{{ $image->url }}" data-lightbox="roadtrip" class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
-                                <img src="{{ url('storage/'.$image->url) }} alt="" class="h-auto max-w-full rounded-lg">
+                                <img src={{ url('storage/'.$image->url) }} alt="" class="h-auto max-w-full rounded-lg">
                             </a>
                         @endforeach
                     </div>
