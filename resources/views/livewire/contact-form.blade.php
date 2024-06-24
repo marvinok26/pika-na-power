@@ -19,29 +19,29 @@
                         <div class="col-span-1">
                             <label for="name" class="block font-bold mb-3 dark:text-white">Name (required)</label>
                             <input type="text" id="name" name="name"
-                                class="w-full bg-blue-200 dark:bg-gray-800 border-1 rounded-md p-2 text-black dark:text-white">
+                                class="w-full bg-[#DAF1FF] dark:bg-gray-800 border-1 rounded-md p-2 text-black dark:text-white">
                         </div>
                         <div class="col-span-1">
                             <label for="email" class="block font-bold mb-3 dark:text-white">Email (required)</label>
                             <input type="email" id="email" name="email"
-                                class="w-full bg-blue-200 dark:bg-gray-800 border-1 rounded-md p-2 text-black dark:text-white">
+                                class="w-full bg-[#DAF1FF] dark:bg-gray-800 border-1 rounded-md p-2 text-black dark:text-white">
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mt-4">
                         <div class="col-span-1">
                             <label for="phone" class="block font-bold mb-3 dark:text-white">Phone (optional)</label>
                             <input type="tel" id="phone" name="phone"
-                                class="w-full bg-blue-200 dark:bg-gray-800 border-0 rounded-md p-2 text-black dark:text-white">
+                                class="w-full bg-[#DAF1FF] dark:bg-gray-800 border-0 rounded-md p-2 text-black dark:text-white">
                         </div>
                         <div class="col-span-1">
                             <label for="subject" class="block font-bold mb-3 dark:text-white">Subject (optional)</label>
                             <input type="text" id="subject" name="subject"
-                                class="w-full bg-blue-200 dark:bg-gray-800 border-0 rounded-md p-2 text-black dark:text-white">
+                                class="w-full bg-[#DAF1FF] dark:bg-gray-800 border-0 rounded-md p-2 text-black dark:text-white">
                         </div>
                     </div>
                     <div class="mt-4">
                         <label for="message" class="block font-bold mb-3 dark:text-white">Message (optional)</label>
-                        <textarea id="message" name="message" rows="4" class="w-full bg-blue-200 dark:bg-gray-800 border-0 rounded-md p-2 text-black dark:text-white"></textarea>
+                        <textarea id="message" name="message" rows="4" class="w-full bg-[#DAF1FF] dark:bg-gray-800 border-0 rounded-md p-2 text-black dark:text-white"></textarea>
                     </div>
                     <div class="mt-4">
                         <label class="block font-bold dark:text-white">How would you like us to reach out to you?</label>

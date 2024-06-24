@@ -1,5 +1,5 @@
 <section class="bg-cover bg-top bg-no-repeat py-12 bg-[url('bg-light.png')] dark:bg-[url('bg-dark.png')]">
-    <div class="mx-auto max-w-6xl lg:px-0 px-10 pb-10">
+    <div class="mx-auto max-w-7xl lg:px-0 px-10 pb-10">
         <div class="text-center text-lg">
             <h2  class="text-3xl dark:text-white text-[#163466] lg:text-5xl mb-6 font-medium lg:py-0">
                 Testimonials
