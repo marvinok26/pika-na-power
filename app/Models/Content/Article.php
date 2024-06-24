@@ -15,4 +15,8 @@ class Article extends Model
         'url',
         'thumbnail',
     ];
+
+    protected $casts = [
+        'date' => 'datetime',
+    ];
 }
