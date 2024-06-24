@@ -32,13 +32,12 @@
                         
                             <!-- Metadata Section -->
                             <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-base leading-6 text-white">
-                                <time datetime="2020-03-16" class="text-white mr-6">{{$article->date}}</time>
-                                
+                                <time datetime="{{$article->date->format('Y-m-d')}}" class="text-white mr-6">{{$article->date->format('Y-m-d')}}</time>
                             </div>
                         
                             <!-- Article Title -->
                             <h3 class="mt-1 text-lg font-normal leading-6 text-white">
-                                <a href={{$article->url}} wire:navigate>
+                                <a href="{{$article->url}}" target="_blank" rel="noreferrer">
                                     <span class="absolute inset-0"></span>
                                     {{$article->title}}
                                 </a>

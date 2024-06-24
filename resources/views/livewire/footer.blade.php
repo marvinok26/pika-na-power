@@ -26,7 +26,7 @@
                 @if(!empty($socials))
                     @foreach($socials as $social)
                         <div class="col-span-1 group">
-                            <a href="{{ $social['url'] }}">
+                            <a href="{{ $social->url }}" target="_blank" rel="noreferrer">
                                 <div class="flex flex-row items-center gap-3">
                                     <img src="{{ asset($social->icon) }}" alt="">                                    
                                     <div class="flex-1 group-hover:underline text-white text-base">{{ $social['name'] }}</div>

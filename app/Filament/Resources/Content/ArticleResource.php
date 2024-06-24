@@ -25,7 +25,7 @@ class ArticleResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required(),
-                Forms\Components\DatePicker::make('date_of_birth'),
+                Forms\Components\DatePicker::make('date'),
                 Forms\Components\TextInput::make('url')
                     ->required(),
                 Forms\Components\FileUpload::make('thumbnail'),
