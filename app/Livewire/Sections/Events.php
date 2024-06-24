@@ -3,23 +3,26 @@
 namespace App\Livewire\Sections;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 use App\Models\Content\Event;
 
 class Events extends Component
 {
-    public $sectiondata;
-    public $events;
+    use WithPagination;
 
-    public function mount()
+    public $sectiondata;
+    public $query = '';
+
+    public function search()
     {
-        $this->events = Event::all();
+        $this->resetPage();
     }
 
     public function render()
     {
         return view('livewire.sections.events', [
             'sectiondata' => $this->sectiondata,
-            'events' => $this->events,
+            'events' => Event::where('title', 'like', '%' . $this->query . '%')->paginate(12)
         ]);
     }
 }

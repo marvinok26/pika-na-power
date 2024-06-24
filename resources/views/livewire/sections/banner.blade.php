@@ -1,8 +1,4 @@
-<div class="bg-gray-900">
-    <header class="absolute inset-x-0 top-0 z-40">
-        {{-- navigation here --}}
-        @livewire('header-navigation')
-    </header>
+<div>
     @if ($sectiondata != null)
         <div class="relative isolate overflow-hidden pt-14 lg:px-0 px-10">
             <!-- Background Image with Overlay -->

@@ -3,23 +3,38 @@
 namespace App\Livewire\Sections;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 use App\Models\Content\Article;
 
 class Articles extends Component
 {
-    public $sectiondata;
-    public $articles;
+    use WithPagination;
 
-    public function mount()
+    public $sectiondata;
+    public $query = '';
+
+    public function search()
     {
-        $this->articles = Article::latest()->take(8)->get();
+        $this->validate([
+            'query' => 'required|min:3',
+        ]);
+
+        $this->resetPage();
     }
 
     public function render()
     {
+        $queryArticle = Article::query();
+
+        if ($this->query) {
+            $queryArticle->where(function ($q) {
+                $q->where('title', 'like', '%' . $this->query . '%');
+            });
+        }
+
         return view('livewire.sections.articles', [
             'sectiondata' => $this->sectiondata,
-            'articles' => $this->articles,
+            'articlesMaks' => $queryArticle->paginate(4),
         ]);
     }
 }

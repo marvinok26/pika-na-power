@@ -2,7 +2,7 @@
     <div>
         <div class="bg-white dark:bg-gray-950">
             <div class="py-6">
-                <div class="mx-auto max-w-lg px-4">
+                <form class="mx-auto max-w-lg px-4" wire:submit="search">
                     <div class="flex items-center border border-blue-100 dark:border-white rounded-lg overflow-hidden">
                         <div class="flex items-center px-3 py-2">
                             <svg class="h-6 w-6 text-gray-500 dark:text-white mr-2" xmlns="http://www.w3.org/2000/svg"
@@ -11,18 +11,15 @@
                                     d="M21 21l-4.35-4.35m1.8-5.15a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
                             </svg>
                         </div>
-                        <input type="text" 
-                            class="w-full text-lg py-2 px-1 text-gray-700 dark:text-white dark:bg-gray-950 focus:outline-none"
-                            placeholder="Search">
+                        <input type="text" wire:model="query" class="w-full text-lg py-2 px-1 text-gray-700 dark:text-white dark:bg-gray-950 focus:outline-none" placeholder="Search...">
                     </div>
-                </div>
-
+                </form>
             </div>
         </div>
         <div class="bg-white dark:bg-gray-950 pb-16 ">
             <div class="mx-auto lg:px-0 px-4 max-w-7xl">
-                
                 <div class="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-4 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                    {{-- @dd($articles) --}}
                     @foreach ($articles as $article)
                         <article class="relative isolate flex flex-col transition-transform transform hover:scale-105 justify-end overflow-hidden rounded-2xl bg-gray-900 px-4 pb-8 pt-32 sm:pt-40 lg:pt-64">
                             <img src={{ url('storage/'.$article->thumbnail) }} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
@@ -45,45 +42,7 @@
                         </article>
                     @endforeach
                 </div>
-            </div>
-        </div>
-        <div class="mx-auto max-w-7xl lg:px-0 px-10">
-            <div class="flex justify-center my-8">
-                <nav class="inline-flex gap-x-2">
-                    <!-- Previous Button -->
-                    <a href="#"
-                        class="flex items-center px-3 py-2 text-lg font-bold leading-tight text-[#163466] dark:text-white hover:text-blue-800 focus:text-blue-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-5 mr-2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                        </svg>
-                        PREV
-                    </a>
-
-                    <!-- Active Pagination Button -->
-                    <a href="#" class="px-6 py-3 text-lg font-bold leading-tight dark:bg-black bg-[#163466] text-yellow-400  focus:bg-gray-100">
-                        1
-                    </a>
-
-                    <!-- Inactive Pagination Buttons -->
-
-                    <a href="#" class="px-6 py-3 text-lg font-bold leading-tight  text-[#163466] dark:text-white focus:bg-gray-100">
-                        2
-                    </a>
-
-                    <a href="#" class="px-6 py-3 text-lg font-bold leading-tight  text-[#163466] dark:text-white focus:bg-gray-100">
-                        3
-                    </a>
-
-
-                    <a href="#" class="flex items-center px-3 py-2 text-lg font-bold leading-tight text-[#163466] dark:text-white hover:text-blue-800 focus:text-blue-600">
-                        NEXT
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-5 ml-2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </a>
-                </nav>
+                {{ $articles->links() }}
             </div>
         </div>
     </div>

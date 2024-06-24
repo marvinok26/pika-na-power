@@ -30,7 +30,10 @@
             </template>
             
             {{-- <x-top-navigation/> --}}
-
+            <header class="absolute inset-x-0 top-0 z-40">
+                {{-- navigation here --}}
+                <livewire:header-navigation/>
+            </header>
 
             {{ $slot }}
 
