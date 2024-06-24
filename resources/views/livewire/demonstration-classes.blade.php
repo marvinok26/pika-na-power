@@ -10,20 +10,20 @@
             
             <!-- Text Column -->
             <div class="w-full md:w-1/2 px-4">
-                <h2 class="text-3xl lg:text-5xl font-bold mb-4 dark:text-white text-black">Join Pika Na Power's  Cooking Demonstration Classes!</h2>
+                <h2 class="text-3xl lg:text-5xl font-medium mb-4 dark:text-white text-[#163466] ">Join Pika Na Power's  Cooking Demonstration Classes!</h2>
                 <p class="mt-6 dark:text-white text-base text-black">Join the cookery classes at the Demo Centre in Electricity House, Nairobi, every Tuesday and Thursday from 12:30 pm to 1:45 pm. </p>
 
                 <form class="mt-6">
                     <div class="mb-6">
                         <label for="name" class="block text-gray-900 dark:text-white text-base font-bold mb-2">Name (Required)</label>
-                        <input type="text" id="name" name="name" required class="bg-blue-100  rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-blue-200 focus:border-blue-500">
+                        <input type="text" id="name" name="name" required class="bg-blue-100 dark:bg-slate-900  rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-blue-200 focus:border-blue-500">
                     </div>
                     <div class="mb-6">
                         <label for="email" class="block text-gray-900 dark:text-white text-base font-bold mb-2">Email (Required)</label>
-                        <input type="email" id="email" name="email" required class="bg-blue-100  rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-blue-200 focus:border-blue-500">
+                        <input type="email" id="email" name="email" required class="bg-blue-100 dark:bg-slate-900  rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-blue-200 focus:border-blue-500">
                     </div>
                     <div class="flex items-center justify-between">
-                        <button type="submit" class="text-white bg-[#163466] mt-2 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">
+                        <button type="submit" class="text-white bg-[#163466] mt-2 focus:ring-4 focus:outline-none focus:ring-gray-100 font-normal rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">
                             Book Your Slot Now
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">

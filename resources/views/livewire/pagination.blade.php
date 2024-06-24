@@ -12,7 +12,7 @@
             </a>
 
             <!-- Active Pagination Button -->
-            <a href="#" class="px-6 py-3 text-lg font-bold leading-tight dark:bg-black bg-[#163466] text-yellow-400  focus:bg-gray-100">
+            <a href="#" class="px-6 py-3 text-lg font-bold leading-tight dark:bg-slate-900 bg-[#163466] text-yellow-400  focus:bg-gray-100">
                 1
             </a>
 

@@ -11,7 +11,7 @@
             </div>
 
             <div class="col-span-1">
-                <h2  class="text-3xl dark:text-white text-[#163466]  lg:text-4xl my-6 font-bold lg:py-0">
+                <h2  class="text-3xl dark:text-white text-[#163466]  lg:text-4xl my-6 font-medium	 lg:py-0">
                     Message Us
                 </h2>
                 <form class="grid grid-cols-1 gap-4 dark:bg-slate-950">

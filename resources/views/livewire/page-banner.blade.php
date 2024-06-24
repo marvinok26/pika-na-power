@@ -15,9 +15,10 @@
             <!-- Newsroom Heading -->
             
 
-            <h1 data-aos="fade-left" data-aos-duration="1500" class="text-4xl lg:text-6xl my-6 font-bold text-white lg:py-0 py-5">
-                Reducing Emissions<br>Improving Lives
+            <h1 data-aos="fade-left" data-aos-duration="1500" class="text-4xl lg:text-6xl my-6 font-medium text-white lg:py-0 py-5 max-w-2xl">
+                Reducing Emissions Improving Lives
             </h1>
+            
             
 
             <p class="text-white max-w-2xl pb-5">Smart, efficient, and sustainable fuel usage made easy! Join Pika na Power for an electrifying culinary journey today!</p>

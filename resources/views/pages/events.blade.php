@@ -4,6 +4,7 @@
         <livewire:breadcrumbs/>
         <livewire:search/>
         <livewire:events/>
+        <livewire:pagination/>
         
        
         

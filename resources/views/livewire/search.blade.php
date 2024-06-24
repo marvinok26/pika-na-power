@@ -1,7 +1,7 @@
 <div class="bg-white dark:bg-gray-950">
     <div class="py-6">
         <div class="mx-auto max-w-lg px-4">
-            <div class="flex items-center border border-blue-100 dark:border-white rounded-lg overflow-hidden">
+            <div class="flex items-center border border-blue-100 dark:border-gray-500 rounded-lg overflow-hidden">
                 <div class="flex items-center px-3 py-2">
                     <svg class="h-6 w-6 text-gray-500 dark:text-white mr-2" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
