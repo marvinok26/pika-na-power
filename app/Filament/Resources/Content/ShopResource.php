@@ -23,9 +23,7 @@ class ShopResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\FileUpload::make('logo')
-                    ->image()
-                    ->required(),
+                Forms\Components\FileUpload::make('logo'),
                 Forms\Components\TextInput::make('url')
                     ->required(),
             ]);
@@ -35,9 +33,7 @@ class ShopResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('logo')
-                    ->searchable()
-                    ->sortable(),
+                Tables\Columns\ImageColumn::make('logo'),
                 Tables\Columns\TextColumn::make('url')
                     ->searchable()
                     ->sortable(),

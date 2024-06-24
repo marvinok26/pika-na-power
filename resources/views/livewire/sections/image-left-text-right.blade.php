@@ -5,7 +5,7 @@
                 <!-- Video Column -->
                 <div class="flex justify-center">
                     <div class="relative pb-9/16">
-                        <img src={{$sectiondata->image}} class="w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg" alt="">
+                        <img src={{ url('storage/'.$sectiondata->image) }} class="w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg" alt="">
                     </div>
                 </div>
                 <!-- Text Column -->

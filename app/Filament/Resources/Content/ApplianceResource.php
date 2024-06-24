@@ -23,9 +23,7 @@ class ApplianceResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\FileUpload::make('image')
-                    ->image()
-                    ->required(),
+                Forms\Components\FileUpload::make('image'),
                 Forms\Components\TextInput::make('title')
                     ->required(),
                 Forms\Components\TextInput::make('button_text')
@@ -39,8 +37,7 @@ class ApplianceResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image')
-                    ->sortable(),
+                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('button_text')
                     ->searchable()
                     ->sortable(),

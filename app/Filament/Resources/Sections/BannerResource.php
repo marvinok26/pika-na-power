@@ -30,14 +30,13 @@ class BannerResource extends Resource
                 TextInput::make('title')
                     ->maxLength(255)
                     ->required(),
-                Select::make('page_sections_id')
-                    ->relationship(name: 'page_section.page', titleAttribute: 'name')
-                    ->label('Page')
-                    ->searchable()
-                    ->preload()
-                    ->required(),
+                // Select::make('page_sections_id')
+                //     ->relationship(name: 'page_section.page', titleAttribute: 'name')
+                //     ->label('Page')
+                //     ->searchable()
+                //     ->preload()
+                //     ->required(),
                 FileUpload::make('image')
-                    ->required()
                     ->columnSpanFull(),
                 RichEditor::make('description')
                     ->columnSpan('full'),

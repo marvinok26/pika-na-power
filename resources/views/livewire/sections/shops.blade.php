@@ -17,7 +17,7 @@
                 <!-- Item 1 -->
                 @foreach ($shops as $shop)
                     <a href={{$shop->url}} class="border-2 rounded-lg dark:border-black border-blue-400 text-center bg-gray-50 p-6 hover:border-blue-800">
-                        <img src={{$shop->logo}} class="h-28 mx-auto text-center object-contain" alt="">
+                        <img src={{ url('storage/'.$shop->logo) }} class="h-28 mx-auto text-center object-contain" alt="">
                     </a>
                 @endforeach
             </div>

@@ -26,9 +26,7 @@ class EventResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required(),
                 Forms\Components\DatePicker::make('date'),
-                Forms\Components\FileUpload::make('thumbnail')
-                    ->image()
-                    ->required(),
+                Forms\Components\FileUpload::make('thumbnail'),
             ]);
     }
 
@@ -41,9 +39,7 @@ class EventResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('date')
                     ->date(),
-                Tables\Columns\ImageColumn::make('thumbnail')
-                    ->searchable()
-                    ->sortable(),
+                Tables\Columns\ImageColumn::make('thumbnail'),
             ])
             ->filters([
                 //

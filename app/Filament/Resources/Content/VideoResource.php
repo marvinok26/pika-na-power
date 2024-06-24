@@ -29,9 +29,7 @@ class VideoResource extends Resource
                     ->required(),
                 Forms\Components\TextInput::make('url')
                     ->required(),
-                Forms\Components\FileUpload::make('thumbnail')
-                    ->image()
-                    ->required(),
+                Forms\Components\FileUpload::make('thumbnail'),
             ]);
     }
 
@@ -47,9 +45,7 @@ class VideoResource extends Resource
                 Tables\Columns\TextColumn::make('url')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\ImageColumn::make('thumbnail')
-                    ->searchable()
-                    ->sortable(),
+                Tables\Columns\ImageColumn::make('thumbnail'),
             ])
             ->filters([
                 //

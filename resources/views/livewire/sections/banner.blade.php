@@ -7,7 +7,7 @@
         <div class="relative isolate overflow-hidden pt-14 lg:px-0 px-10">
             <!-- Background Image with Overlay -->
             <div class="absolute inset-0">
-                <img src={{$sectiondata->image}} alt="" class="h-full w-full object-cover">
+                <img src={{ url('storage/'.$sectiondata->image) }} alt="" class="h-full w-full object-cover">
                 <div class="absolute inset-0 bg-black opacity-40"></div>
             </div>
             <!-- Content Container -->

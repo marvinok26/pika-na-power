@@ -28,9 +28,7 @@ class ArticleResource extends Resource
                 Forms\Components\DatePicker::make('date_of_birth'),
                 Forms\Components\TextInput::make('url')
                     ->required(),
-                Forms\Components\FileUpload::make('thumbnail')
-                    ->image()
-                    ->required(),
+                Forms\Components\FileUpload::make('thumbnail'),
             ]);
     }
 
@@ -46,9 +44,7 @@ class ArticleResource extends Resource
                 Tables\Columns\TextColumn::make('url')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\ImageColumn::make('thumbnail')
-                    ->searchable()
-                    ->sortable(),
+                Tables\Columns\ImageColumn::make('thumbnail'),
             ])
             ->filters([
                 //

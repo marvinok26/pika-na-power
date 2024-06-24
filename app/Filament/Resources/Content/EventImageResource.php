@@ -23,9 +23,8 @@ class EventImageResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\FileUpload::make('image')
-                    ->image()
-                    ->required(),
+                Forms\Components\FileUpload::make('url')
+                    ->label('Image'),
                 Forms\Components\Select::make('event_id')
                     ->relationship(name: 'event', titleAttribute: 'title'),
             ]);
@@ -35,8 +34,8 @@ class EventImageResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image')
-                    ->sortable(),
+                Tables\Columns\ImageColumn::make('url')
+                    ->label('Image'),
                 Tables\Columns\TextColumn::make('event.title')
                     ->searchable()
                     ->sortable(),

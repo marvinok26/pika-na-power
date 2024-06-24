@@ -31,8 +31,7 @@ class WhyUsResource extends Resource
                 Forms\Components\RichEditor::make('description')
                     ->required()
                     ->columnSpan('full'),
-                Forms\Components\FileUpload::make('image')
-                    ->required(),
+                Forms\Components\FileUpload::make('image'),
                 // Forms\Components\Select::make('page_section_id')
                 //     ->relationship('page_section', 'name')
                 //     ->required(),
@@ -46,9 +45,7 @@ class WhyUsResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\ImageColumn::make('image')
-                    ->searchable()
-                    ->sortable(),
+                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('page_section.page.name')
                     ->searchable()
                     ->sortable(),

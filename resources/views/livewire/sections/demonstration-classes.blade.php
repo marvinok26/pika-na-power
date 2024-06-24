@@ -5,7 +5,7 @@
                 <!-- Image Column -->
                 <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
                     <div class="relative w-full h-full flex justify-center items-center">
-                        <img src={{$sectiondata->image}} alt="Cooking Image" class="object-cover rounded-lg shadow-lg">
+                        <img src={{ url('storage/'.$sectiondata->image) }} alt="Cooking Image" class="object-cover rounded-lg shadow-lg">
                     </div>
                 </div>
                 
