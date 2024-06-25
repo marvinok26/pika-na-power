@@ -3,7 +3,7 @@
         <div class="flex flex-wrap justify-center items-center -mx-4">
             <!-- Video Column -->
             <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                <h2  class="text-3xl dark:text-white     text-black lg:text-4xl my-6 font-medium lg:py-0">
+                <h2  class="text-3xl dark:text-white   text-black lg:text-4xl my-6 font-medium lg:py-0">
                     Resources
                 </h2>
             </div>
