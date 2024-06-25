@@ -1,4 +1,4 @@
-<div :class="{ 'sticky shadow-2': isSticky }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 0 })"  x-data="{ isOpen: false,  isSticky: false, isSearchOpen: false }">
+<div :class="{ 'sticky shadow-2': isSticky }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 0 })"  x-data="{ isOpen: false,  isSticky: false, showSearch: false, searchModalOpen: false }">
     
     <nav class="flex lg:hidden mx-auto max-w-7xl px-10 items-center bg-white dark:bg-slate-950 py-2 justify-between " aria-label="Global">
         <div class="flex lg:flex-1">
@@ -138,71 +138,10 @@
             @endforeach
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <button @click="isSearchOpen = !isSearchOpen"
-                class="flex items-center justify-center w-10 h-10 bg-[#163466] rounded-full hover:bg-gray-900 focus:outline-none focus:ring-6 focus:ring-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6 text-[#F9CC0B]">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                </svg>
-            </button>
-
+            <livewire:sections.search />
         </div>
     </nav>
     </div>
-
-
-
-    <div x-cloak x-show="isSearchOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="isSearchOpen" @keydown.esc.window="isSearchOpen = false" @click.self="isSearchOpen = false" class="fixed inset-0 z-30 flex w-full items-start justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-8" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
-        <!-- Modal Dialog -->
-        <div x-show="isSearchOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex w-full max-w-xl flex-col gap-4 overflow-hidden rounded-xl border border-slate-300 bg-white text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300">
-            <!-- Dialog Header -->
-            <div class="flex items-center justify-between border-b border-slate-300 bg-slate-100/60 p-4 dark:border-slate-700 dark:bg-slate-900/20">
-                <h3 id="defaultModalTitle" class="font-semibold tracking-wide text-black dark:text-white font-sans">Search</h3>
-                <button @click="isSearchOpen = false" aria-label="close modal">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="1.4" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
-                </button>
-            </div>
-            <!-- Dialog Body -->
-            <div class="px-4 py-1"> 
-                
-                <form class="relative" wire:submit.prevent="searchsite">
-                    
-
-                    <div class="flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
-                        <span class="flex select-none items-center pl-3 text-gray-500 sm:text-sm">
-                            <svg class="h-6 w-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                            </svg>
-                        </span>
-                        <input type="text" name="search" id="search" autocomplete="off" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 dark:text-slate-400" placeholder="Search ...">
-                    </div>
-
-                    {{-- @error('search')
-                        <p class="text-xs text-danger font-normal text-red-500 text-center font-serif">
-                            {{ $message }}
-                        </p>
-                    @enderror --}}
-                </form>
-
-
-
-                <p class="p-4 text-sm text-gray-500 font-sans text-center capitalize">No results yet</p>
-
-
-
-            </div>
-            <!-- Dialog Footer -->
-            {{-- <div class="flex flex-col-reverse justify-between gap-2 border-t border-slate-300 bg-slate-100/60 p-4 dark:border-slate-700 dark:bg-slate-900/20 sm:flex-row sm:items-center md:justify-end">
-                <button @click="isSearchOpen = false" type="button" class="cursor-pointer whitespace-nowrap rounded-xl px-4 py-2 text-center text-sm font-medium tracking-wide text-slate-700 transition hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:opacity-100 active:outline-offset-0 dark:text-slate-300 dark:focus-visible:outline-blue-600">Remind me later</button>
-                <button @click="isSearchOpen = false" type="button" class="cursor-pointer whitespace-nowrap rounded-xl bg-blue-700 px-4 py-2 text-center text-sm font-medium tracking-wide text-slate-100 transition hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:opacity-100 active:outline-offset-0 dark:bg-blue-600 dark:text-slate-100 dark:focus-visible:outline-blue-600">Upgrade Now</button>
-            </div> --}}
-        </div>
-    </div>
-
-
 
     {{-- <!-- Mobile menu, show/hide based on menu open state. -->
     <div x-cloak x-show="isOpen" class="lg:hidden" role="dialog" aria-modal="true">
