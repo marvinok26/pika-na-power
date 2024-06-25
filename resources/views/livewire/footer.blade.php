@@ -84,7 +84,7 @@
                         </div>
                         <div>
                             <h3 class="text-sm dark:text-white text-[#646971] font-normal	 mb-1">{{ $contact->title }}</h3>
-                            <p class="text-base dark:text-gray-400 text-[#163466]">{{ $contact->subtitle }}</p>
+                            <p class="text-base font-medium	 dark:text-gray-400 text-[#163466]">{{ $contact->subtitle }}</p>
                         </div>
                     </div>
                 @endforeach
