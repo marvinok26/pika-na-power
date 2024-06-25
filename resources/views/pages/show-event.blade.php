@@ -57,8 +57,8 @@
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
                         @foreach ($event->images as $image)
                         <div class="flex flex-wrap gap-4 justify-center">
-                            <div class="">
-                                <a href="{{ $image->url }}" data-lightbox="roadtrip" class="block overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
+                            <div class="w-full">
+                                <a href="{{ $image->url }}" data-lightbox="roadtrip" class="block w-full overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
                                     <img src="{{ url('storage/'.$image->url) }}" alt="" class="w-full h-64 object-cover object-top rounded-lg">
                                 </a>
                             </div>
