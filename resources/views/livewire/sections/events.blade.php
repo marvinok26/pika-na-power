@@ -1,5 +1,5 @@
-@if ($sectiondata != null)
-    <div>
+<div>
+    @if ($sectiondata != null)
         <div class="bg-white dark:bg-gray-950">
             <div class="py-6">
                 <form class="mx-auto max-w-lg px-4" wire:submit.prevent="search">
@@ -39,9 +39,9 @@
                             </h3>
                         </article>
                     @endforeach
+                    {{ $events->links() }}
                 </div>
             </div>
-            {{ $events->links() }}
         </div>
-    </div>
-@endif
+    @endif
+</div>

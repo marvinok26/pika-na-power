@@ -17,7 +17,6 @@
             </div>
             <div class="mx-auto lg:px-0 px-4 max-w-7xl">
                 <div class="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-4 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-                    {{-- @dd($articles) --}}
                     @foreach ($articles as $article)
                         <div class="relative isolate flex flex-col transition-transform transform hover:scale-105 justify-end overflow-hidden rounded-2xl bg-gray-900 px-4 pb-8 pt-32 sm:pt-40 lg:pt-64">
                             <img src={{ url('storage/'.$article->thumbnail) }} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">

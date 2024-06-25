@@ -15,6 +15,10 @@ class Events extends Component
 
     public function search()
     {
+        $this->validate([
+            'query' => 'required|min:3',
+        ]);
+
         $this->resetPage();
     }
 
