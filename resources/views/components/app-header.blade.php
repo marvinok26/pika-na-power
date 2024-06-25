@@ -188,7 +188,7 @@
 <!-- Mobile menu, show/hide based on menu open state. -->
 <div class="lg:hidden font-sans" role="dialog" aria-modal="true" x-show="isOpen">
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 bg-black bg-opacity-50 z-10" x-on:click="isOpen = !isOpen" x-show="showMobile"></div>
+    {{-- <div class="fixed inset-0 bg-black bg-opacity-50 z-10" x-on:click="isOpen = !isOpen" x-show="showMobile"></div> --}}
     <div class="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 rounded-r-xl"
         x-show="isOpen"
         x-transition:enter="transform transition ease-in-out duration-100 sm:duration-200"
@@ -213,7 +213,7 @@
             <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                     @for ($i = 1; $i <= 3; $i++)
-                    <div class="-mx-3">
+                    {{-- <div class="-mx-3">
                         <button @click="mobileshow !== {{ $i }} ? mobileshow = {{ $i }} : mobileshow = null" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-medium leading-7 text-gray-900 dark:text-slate-50 hover:bg-secondary hover:text-primary" aria-controls="disclosure-{{ $i }}" aria-expanded="false">
                             Test {{ $i }}
                             <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -226,7 +226,7 @@
                             <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-700 dark:text-slate-100 hover:bg-secondary hover:text-primary">Sub-item {{ $j }}</a>
                             @endfor
                         </div>
-                    </div>
+                    </div> --}}
                     @endfor
                 </div>
             </div>

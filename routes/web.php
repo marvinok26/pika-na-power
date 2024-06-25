@@ -7,10 +7,6 @@ use App\Http\Controllers\Pages\InvokePagesController;
 
 Route::get('/', InvokePagesController::class)->name('index');
 
-Route::get('/single-event', function () {
-    return view('pages.single-event');
-});
-
 Route::get('/events/{slug}', EventController::class)->name('events.show');
 
 Route::get('/{page:slug}', PagesController::class)->name('page.show');

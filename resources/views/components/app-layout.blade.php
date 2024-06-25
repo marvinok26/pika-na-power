@@ -19,7 +19,8 @@
     </head>
     <body class="font-sans antialiased" x-cloak x-data="{darkMode: $persist(false), zoomLevel: $persist(100), siteGrayscale: $persist(false)}" :class="{'dark': darkMode === true }" :style="'zoom: ' + zoomLevel + '%'">
 
-        <div class="bg-white dark:bg-slate-950 flex flex-col" x-data="scrollHandler()">
+        {{-- <div class="bg-white dark:bg-slate-950 flex flex-col" x-data="scrollHandler()"> --}}
+        <div class="bg-white dark:bg-slate-950 flex flex-col">
 
             <template x-if="siteGrayscale">
                 <style>

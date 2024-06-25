@@ -1,8 +1,8 @@
-@if ($sectiondata != null)
-    <div>
-        <div class="bg-white dark:bg-gray-950">
+<div>
+    @if ($sectiondata != null)
+        <div class="bg-white dark:bg-gray-950 pb-16">
             <div class="py-6">
-                <form class="mx-auto max-w-lg px-4" wire:submit="search">
+                <form class="mx-auto max-w-lg px-4" wire:submit.prevent="searchArticle">
                     <div class="flex items-center border border-blue-100 dark:border-white rounded-lg overflow-hidden">
                         <div class="flex items-center px-3 py-2">
                             <svg class="h-6 w-6 text-gray-500 dark:text-white mr-2" xmlns="http://www.w3.org/2000/svg"
@@ -11,12 +11,10 @@
                                     d="M21 21l-4.35-4.35m1.8-5.15a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
                             </svg>
                         </div>
-                        <input type="text" wire:model="query" class="w-full text-lg py-2 px-1 text-gray-700 dark:text-white dark:bg-gray-950 focus:outline-none" placeholder="Search...">
+                        <input type="text" wire:model="search" class="w-full text-lg py-2 px-1 text-gray-700 dark:text-white dark:bg-gray-950 focus:outline-none" placeholder="Search...">
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="bg-white dark:bg-gray-950 pb-16 ">
             <div class="mx-auto lg:px-0 px-4 max-w-7xl">
                 <div class="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-4 lg:mx-0 lg:max-w-none lg:grid-cols-4">
                     {{-- @dd($articles) --}}
@@ -41,10 +39,9 @@
                             </h3>
                         </div>
                     @endforeach
+                    {{ $articles->links() }}
                 </div>
-                {{ $articles->links() }}
             </div>
         </div>
-    </div>
-@endif
-
+    @endif
+</div>

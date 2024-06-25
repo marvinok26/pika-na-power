@@ -22,7 +22,7 @@
     @elseif($section->id == 11)
         <livewire:sections.latest-videos :section="$section" :sectiondata="$sectiondata"/>
     @elseif($section->id == 12)
-        <livewire:sections.articles :section="$section" :sectiondata="$sectiondata"/>
+        <livewire:sections.article-resources :section="$section" :sectiondata="$sectiondata"/>
     @elseif($section->id == 13)
         <livewire:sections.resources :section="$section" :sectiondata="$sectiondata"/>
     @elseif($section->id == 14)
