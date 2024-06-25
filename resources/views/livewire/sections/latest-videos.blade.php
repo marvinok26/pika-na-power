@@ -31,7 +31,7 @@
                     
                         <!-- Article Title -->
                         <h3 class="mt-1 text-lg font-normal leading-6 text-white">
-                            <a href={{$video->url}} wire:navigate>
+                            <a href={{$video->url}} target="_blank" rel="noreferrer">
                                 <span class="absolute inset-0"></span>
                                 {{$video->title}}
                             </a>
