@@ -1,7 +1,7 @@
 @if ($sectiondata != null)
-    <section class="bg-cover bg-top bg-no-repeat py-12" style="background-image: url('/images/bg.png');">
+    <section class="bg-cover bg-top bg-no-repeat py-12 bg-[url('bg-light.png')] dark:bg-[url('bg-dark.png')]">
         <div class="mx-auto max-w-7xl lg:px-0 px-10 pb-10 ">
-            <h2  class="text-3xl  text-[#163466] text-center lg:text-4xl my-6 font-bold lg:py-0">
+            <h2  class="text-3xl  text-[#163466] dark:text-white text-center lg:text-4xl max-w-2xl mx-auto my-6 font-medium lg:py-0">
                 {{ $sectiondata->title }}
             </h2>
             <div class="mx-auto lg:px-0 px-10 max-w-6xl border rounded border-blue-200 dark:border-black">
@@ -12,8 +12,8 @@
                                 <span class="text-yellow-400">1</span>
                             </div>
                             <div>
-                                <h3 class="text-base  font-semibold mb-1">{{$contact->title}}</h3>
-                                <p class="text-base text-[#163466]">{{ $contact->subtitle }}</p>
+                                <h3 class="text-sm text-[#646971] dark:text-gray-200  font-normal mb-1">{{$contact->title}}</h3>
+                                <p class="text-base font-medium	  dark:text-gray-400 text-[#163466]">{{ $contact->subtitle }}</p>
                             </div>
                         </div>
                     @endforeach

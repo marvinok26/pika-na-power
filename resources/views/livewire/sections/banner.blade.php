@@ -7,9 +7,9 @@
                 <div class="absolute inset-0 bg-black opacity-40"></div>
             </div>
             <!-- Content Container -->
-            <div class="relative mx-auto max-w-7xl py-16 sm:py-24 lg:pt-44">
+            <div class="relative mx-auto max-w-7xl pb-16 sm:py-24 lg:pt-64">
                 <!-- Newsroom Heading -->
-                <h1 data-aos="fade-left" data-aos-duration="1500" class="text-4xl lg:text-6xl my-6 font-bold text-white lg:py-0 py-5 ">
+                <h1 data-aos="fade-left" data-aos-duration="300" class="text-4xl max-w-2xl lg:text-6xl my-6 font-medium text-white lg:py-0 py-5 ">
                     {{$sectiondata->title}}
                 </h1>
                 <div class="text-white max-w-2xl pb-5">{!!$sectiondata->description!!}</div>

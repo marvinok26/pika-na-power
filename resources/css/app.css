@@ -75,6 +75,41 @@ h1, h2, h3, h4{
    font-size: 80px;
 }
 
+/* owl 2 */
+.owl-carousel-2 .owl-nav {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.owl-carousel-2 .owl-nav button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    /* color: #163466; */
+    cursor: pointer;
+}
+.owl-carousel-2 .owl-nav button:hover {
+    background: none !important;
+    color:black !important;
+}
+.owl-carousel-2 .owl-nav button.owl-prev {
+    left: -70px;
+    position: relative;
+}
+.owl-carousel-2 .owl-nav button.owl-next {
+    right: -70px;
+    position: relative;
+}
+.owl-carousel-2 .owl-dots {
+    display: none;
+}
+.owl-carousel-2 .owl-prev span, .owl-next span {
+    font-size: 80px;
+}
+
 .table-custom {
     border-collapse: separate;
     border-spacing: 0 1rem; /* Adds space between rows */
