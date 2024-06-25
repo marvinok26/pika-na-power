@@ -34,7 +34,7 @@ class Articles extends Component
 
         return view('livewire.sections.articles', [
             'sectiondata' => $this->sectiondata,
-            'articlesMaks' => $queryArticle->paginate(4),
+            'articles' => $queryArticle->paginate(4),
         ]);
     }
 }

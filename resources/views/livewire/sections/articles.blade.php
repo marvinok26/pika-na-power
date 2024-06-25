@@ -21,7 +21,7 @@
                 <div class="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-4 lg:mx-0 lg:max-w-none lg:grid-cols-4">
                     {{-- @dd($articles) --}}
                     @foreach ($articles as $article)
-                        <article class="relative isolate flex flex-col transition-transform transform hover:scale-105 justify-end overflow-hidden rounded-2xl bg-gray-900 px-4 pb-8 pt-32 sm:pt-40 lg:pt-64">
+                        <div class="relative isolate flex flex-col transition-transform transform hover:scale-105 justify-end overflow-hidden rounded-2xl bg-gray-900 px-4 pb-8 pt-32 sm:pt-40 lg:pt-64">
                             <img src={{ url('storage/'.$article->thumbnail) }} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
                             <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black  via-gray-900/50"></div>
                             <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
@@ -39,7 +39,7 @@
                                     {{$article->title}}
                                 </a>
                             </h3>
-                        </article>
+                        </div>
                     @endforeach
                 </div>
                 {{ $articles->links() }}

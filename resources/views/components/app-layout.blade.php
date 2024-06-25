@@ -32,7 +32,8 @@
             {{-- <x-top-navigation/> --}}
             <header class="absolute inset-x-0 top-0 z-40">
                 {{-- navigation here --}}
-                <livewire:header-navigation/>
+                {{-- <livewire:header-navigation/> --}}
+                <x-app-header />
             </header>
 
             {{ $slot }}
