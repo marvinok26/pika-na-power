@@ -41,7 +41,7 @@
         </div>
     </nav>
     
-    <div :class="isSticky ? 'bg-[#163466] dark:bg-slate-950 py-4 mt-0' : 'mt-12'" class=" px-6">
+    <div :class="isSticky ? 'bg-[#163466] dark:bg-slate-900 py-4 mt-0' : 'mt-12'" class=" px-6">
         <nav class="lg:flex hidden mx-auto max-w-7xl items-center rounded-md justify-between " aria-label="Global">
             <!-- loop category items -->
             <div class="flex gap-x-12 ml-auto">
@@ -113,7 +113,7 @@
     </div>
 
     <div :class="{ 'shadow-2xl bg-white  dark:bg-slate-950': isSticky }">
-        <nav :class="isSticky ? 'mt-0 px-0 ' : 'mt-6 px-0 shadow'" class="lg:flex hidden mx-auto  max-w-7xl items-center bg-white dark:bg-slate-950  py-2 rounded-md justify-between px-6" 
+        <nav :class="isSticky ? 'mt-0 px-0 ' : 'mt-6  px-6 shadow'" class="lg:flex hidden mx-auto  max-w-7xl items-center bg-white dark:bg-slate-950  py-2 rounded-md justify-between" 
         aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
