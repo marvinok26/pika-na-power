@@ -56,9 +56,14 @@
                 <div class="mx-auto lg:px-0 px-10 max-w-7xl">
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
                         @foreach ($event->images as $image)
-                            <a href="{{ $image->url }}" data-lightbox="roadtrip" class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
-                                <img src={{ url('storage/'.$image->url) }} alt="" class="h-auto max-w-full rounded-lg">
-                            </a>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <div class="">
+                                <a href="{{ $image->url }}" data-lightbox="roadtrip" class="block overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
+                                    <img src="{{ url('storage/'.$image->url) }}" alt="" class="w-full h-64 object-cover object-top rounded-lg">
+                                </a>
+                            </div>
+                        </div>
+                        
                         @endforeach
                     </div>
                 </div>
