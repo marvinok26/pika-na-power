@@ -39,7 +39,8 @@
             {{ $slot }}
 
             {{-- Footer --}}
-            <livewire:footer/>
+            {{-- <livewire:footer/> --}}
+            <x-app-footer />
         </div>
 
         @livewireScripts

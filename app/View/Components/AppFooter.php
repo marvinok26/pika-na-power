@@ -3,8 +3,13 @@
 namespace App\View\Components;
 
 use Closure;
-use Illuminate\Contracts\View\View;
+use App\Models\Content\Social;
 use Illuminate\View\Component;
+use App\Models\Content\Contact;
+use App\Models\Content\QuickLink;
+use App\Models\Content\FooterLink;
+use App\Models\Content\FooterPage;
+use Illuminate\Contracts\View\View;
 
 class AppFooter extends Component
 {
@@ -21,6 +26,12 @@ class AppFooter extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.app-footer');
+        $footerLinks = FooterLink::all();
+        $quickLinks = QuickLink::all();
+        $socials = Social::all();
+        $footerPages = FooterPage::all();
+        $contacts = Contact::all();
+
+        return view('components.app-footer', compact('footerLinks', 'quickLinks', 'socials', 'footerPages', 'contacts'));
     }
 }

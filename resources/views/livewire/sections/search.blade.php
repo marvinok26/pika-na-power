@@ -44,8 +44,8 @@
                             <div>
                                 @foreach($results as $type => $modelSearchResults)
                                     @if( count($modelSearchResults) > 0 )
-                                        <div class="sticky top-0 z-10 border-y border-b-gray-200 border-t-gray-100 bg-gray-50 px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900">
-                                            <h3 class="text-lg font-serif capitalize">{{ $type }}</h3>
+                                        <div class="sticky top-0 z-10 leading-6 text-primary dark:text-yellow pl-1 bg-slate-100 dark:bg-slate-800 mt-2">
+                                            <h3 class="text-lg font-bold font-sans capitalize">{{ $type }}</h3>
                                         </div>
                                         @if($type === 'events')
                                             <div class="flex flex-col w-full gap-3 px-3 py-2">
