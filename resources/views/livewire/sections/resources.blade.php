@@ -4,14 +4,14 @@
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Video Column -->
                 <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                    <h2  class="text-3xl  text-black lg:text-4xl my-6 font-bold lg:py-0">
+                    <h2  class="text-3xl dark:text-white  text-black lg:text-4xl my-6 font-bold lg:py-0">
                         {{$sectiondata->title}}
                     </h2>
                 </div>
                 
                 <!-- Text Column -->
                 <div class="w-full md:w-1/2 px-4">
-                    <div class=" text-black text-base">{!!$sectiondata->description!!}</div>
+                    <div class=" text-black dark:text-white text-base">{!!$sectiondata->description!!}</div>
                 </div>
             </div>
             <div class="grid mt-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
