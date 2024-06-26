@@ -15,7 +15,7 @@
                     <!-- Content Container -->
                     <div class="relative mx-auto max-w-7xl py-16 sm:py-24 lg:pt-44">
                         <!-- Newsroom Heading -->
-                        <h1 data-aos="fade-left" data-aos-duration="1500" class="text-4xl lg:text-6xl my-6 font-bold text-white lg:py-0 py-5 ">
+                        <h1 data-aos="fade-left" data-aos-duration="1500" class="text-4xl lg:text-5xl my-6 max-w-2xl font-medium text-white lg:py-0 py-5 ">
                             {{$event->title}}
                         </h1>
                     </div>
@@ -54,11 +54,17 @@
             </div>
             <div class="bg-white dark:bg-gray-950 bg-center py-12 sm:py-16">
                 <div class="mx-auto lg:px-0 px-10 max-w-7xl">
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                         @foreach ($event->images as $image)
-                            <a href="{{ $image->url }}" data-lightbox="roadtrip" class="h-auto max-w-full rounded-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
-                                <img src={{ url('storage/'.$image->url) }} alt="" class="h-auto max-w-full rounded-lg">
-                            </a>
+                        <div class="flex flex-wrap gap-4 justify-center hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
+                            <div class="w-full">
+                                <a href="{{ url('storage/'.$image->url) }}" data-lightbox="roadtrip" class="rounded-lg w-full cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
+                                    <img src="{{ url('storage/'.$image->url) }}" alt="" class="w-full h-48 sm:h-96 object-cover object-top rounded-lg">
+                                </a>
+                            </div>
+                        </div>
+                       
+                        
                         @endforeach
                     </div>
                 </div>
