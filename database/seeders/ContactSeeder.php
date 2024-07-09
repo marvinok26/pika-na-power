@@ -16,26 +16,26 @@ class ContactSeeder extends Seeder
         Contact::create([
             'title' => 'Phone',
             'subtitle' => '(+254) 721 345 335',
-            'icon' => 'phone',
+            'icon' => 'images/call.png',
         ]);
 
         Contact::create([
             'title' => 'Email',
             'subtitle' => 'info@pikanapower.co.ke
             PikanaPower@kplc.co.ke',
-            'icon' => 'email',
+            'icon' => 'images/smstracking.png',
         ]);
 
         Contact::create([
             'title' => 'Nkrumah Ln, Nairobi',
             'subtitle' => 'Electricity House',
-            'icon' => 'location',
+            'icon' => 'images/map.png',
         ]);
 
         Contact::create([
             'title' => 'P.O. BOX',
             'subtitle' => '30099-00100',
-            'icon' => 'location',
+            'icon' => 'images/smsedit.png',
         ]);
     }
 }

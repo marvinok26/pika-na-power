@@ -72,9 +72,8 @@
             @if(!empty($contacts))
                 @foreach($contacts as $contact)
                     <div class="flex items-start justify-center text-left p-4">
-                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-[#163466] text-white rounded-full mr-2">
-                            {{-- <span class="text-yellow-400">{{ $contact['icon'] }}</span> --}}
-                            <img src="{{ asset($contact->icon) }}" alt="">                                    
+                        <div class="flex-shrink-0 w-9 h-9 flex items-center justify-center bg-[#163466] rounded-full mr-2">
+                            <img class="w-4 h-4" src="{{ asset($contact->icon) }}" alt="">                                    
                         </div>
                         <div>
                             <h3 class="text-base font-semibold mb-1">{{ $contact->title }}</h3>
