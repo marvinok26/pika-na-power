@@ -19,7 +19,8 @@
     </head>
     <body class="font-sans antialiased" x-cloak x-data="{darkMode: $persist(false), zoomLevel: $persist(100), siteGrayscale: $persist(false)}" :class="{'dark': darkMode === true }" :style="'zoom: ' + zoomLevel + '%'">
 
-        <div class="bg-white dark:bg-slate-950 flex flex-col" x-data="scrollHandler()">
+        {{-- <div class="bg-white dark:bg-slate-950 flex flex-col" x-data="scrollHandler()"> --}}
+        <div class="bg-white dark:bg-slate-950 flex flex-col">
 
             <template x-if="siteGrayscale">
                 <style>
@@ -30,12 +31,17 @@
             </template>
             
             {{-- <x-top-navigation/> --}}
-
+            <header class="absolute inset-x-0 top-0 z-40">
+                {{-- navigation here --}}
+                {{-- <livewire:header-navigation/> --}}
+                <x-app-header />
+            </header>
 
             {{ $slot }}
 
             {{-- Footer --}}
-            <livewire:footer/>
+            {{-- <livewire:footer/> --}}
+            <x-app-footer />
         </div>
 
         @livewireScripts

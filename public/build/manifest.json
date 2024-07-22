@@ -1,25 +1,25 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-BxjGZ90z.css",
-    "src": "resources/css/app.css",
-    "isEntry": true
-  },
-  "resources/css/bg-dark.png": {
-    "file": "assets/bg-dark-DzJx9byT.png",
-    "src": "resources/css/bg-dark.png"
-  },
-  "resources/css/bg-light.png": {
-    "file": "assets/bg-light-KVXUY8Au.png",
-    "src": "resources/css/bg-light.png"
-  },
-  "resources/css/fonts/Hilmar-Medium.otf": {
-    "file": "assets/Hilmar-Medium-B3sd6bvI.otf",
-    "src": "resources/css/fonts/Hilmar-Medium.otf"
-  },
-  "resources/js/app.js": {
-    "file": "assets/app-C1-XIpUa.js",
-    "name": "app",
-    "src": "resources/js/app.js",
-    "isEntry": true
-  }
+    "resources/css/app.css": {
+        "file": "assets/app-CUnpSQ3c.css",
+        "src": "resources/css/app.css",
+        "isEntry": true
+    },
+    "resources/css/bg-dark.png": {
+        "file": "assets/bg-dark-DzJx9byT.png",
+        "src": "resources/css/bg-dark.png"
+    },
+    "resources/css/bg-light.png": {
+        "file": "assets/bg-light-KVXUY8Au.png",
+        "src": "resources/css/bg-light.png"
+    },
+    "resources/css/fonts/Hilmar-Medium.otf": {
+        "file": "assets/Hilmar-Medium-B3sd6bvI.otf",
+        "src": "resources/css/fonts/Hilmar-Medium.otf"
+    },
+    "resources/js/app.js": {
+        "file": "assets/app-C1-XIpUa.js",
+        "name": "app",
+        "src": "resources/js/app.js",
+        "isEntry": true
+    }
 }
