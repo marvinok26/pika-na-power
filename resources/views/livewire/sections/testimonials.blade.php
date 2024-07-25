@@ -1,22 +1,20 @@
 @if ($sectiondata != null)
-<section class="bg-cover bg-top bg-no-repeat py-16 bg-[url('bg-light.png')] dark:bg-[url('bg-dark.png')]">
-    <div class="mx-auto max-w-5xl lg:px-0 px-10 ">
-        <div class="text-center text-lg">
-            <h2  class="text-3xl dark:text-white text-[#163466] lg:text-5xl mb-6 font-medium lg:py-0">
-                {{$sectiondata->title}}
-            </h2>
-            <div class="owl-carousel owl-carousel-1 owl-theme mt-20">
-                @foreach ($testimonials as $testimonial)
-                <div class="item px-20 ">
-                    <div class="dark:text-white">{!!$testimonial->content!!}</div>
-                    <h2 class="font-bold dark:text-white text-[#163466] text-3xl mt-8">{{$testimonial->author}}</h2>
-                    <p class="mt-1 text-[#163466] dark:text-gray-400">{{$testimonial->author_location}}</p>
+    <section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-12 bg-cover" style="background-image: url('{{ asset('/images/boxbackground.svg') }}');">
+        <div class="mx-auto w-full max-w-5xl lg:px-0 px-10 pb-10">
+            <div class="text-center text-lg flex flex-col gap-6">
+                <h2  class="text-3xl text-primary dark:text-white lg:text-5xl font-serif font-medium lg:py-0">
+                    {{$sectiondata->title}}
+                </h2>
+                <div class="owl-carousel owl-carousel-1 owl-theme">
+                    @foreach ($testimonials as $testimonial)
+                        <div class="item px-20">
+                            <div class="text-base text-primary">{{$testimonial->content}}</div>
+                            <div class="font-medium text-primary font-serif text-3xl mt-8">{{$testimonial->author}}</div>
+                            <p class="mt-1 text-primary">{{$testimonial->author_location}}</p>
+                        </div>
+                    @endforeach
                 </div>
-                @endforeach
-            </div>
-        </div>
-        
-    </div> 
-</section>
-@endif        
-
+            </div> 
+        </div> 
+    </section>
+@endif
