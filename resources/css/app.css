@@ -7,20 +7,85 @@
 article:hover .bg-gradient-to-t {
     background: rgba(13, 31, 81, 0.8); /* blue-900 with opacity */
 }
-* {
-font-family: "Lexend Deca", sans-serif;
+
+[x-cloak] { display: none !important; }
+@font-face {
+    font-family: "Hilmar";
+    src: url("../fonts/Hilmar-Bold.otf") format("truetype");
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Hilmar';
-    src: url('../css/fonts/Hilmar-Medium.otf') format('truetype');
+    font-family: "Hilmar";
+    src: url("../fonts/Hilmar-ExtraLight.otf") format("truetype");
+    font-style: extralight;
+    font-weight: 200;
+    font-display: swap;
 }
 
-h1, h2, h3, h4{
-    font-family: 'Hilmar' !important;
+@font-face {
+    font-family: "Hilmar";
+    src: url("../fonts/Hilmar-Light.otf") format("truetype");
+    font-style: light;
+    font-weight: 300;
+    font-display: swap;
 }
-.hilmar{
-    font-family: 'Hilmar' !important;
+
+@font-face {
+    font-family: "Hilmar";
+    src: url("../fonts/Hilmar-Medium.otf") format("truetype");
+    font-style: medium;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hilmar";
+    src: url("../fonts/Hilmar-Regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hilmar";
+    src: url("../fonts/Hilmar-SemiBold.otf") format("truetype");
+    font-style: semibold;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hilmar";
+    src: url("../fonts/Hilmar-Thin.otf") format("truetype");
+    font-style: thin;
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LexendDeca";
+    src: url("../fonts/LexendDeca-Bold.ttf") format("truetype");
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LexendDeca";
+    src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+body,
+html {
+    font-family: "LexendDeca";
+    @apply bg-white dark:bg-slate-800;
+    scroll-behavior: smooth;
 }
 
 .blog-content p{
@@ -75,41 +140,6 @@ h1, h2, h3, h4{
    font-size: 80px;
 }
 
-/* owl 2 */
-.owl-carousel-2 .owl-nav {
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-.owl-carousel-2 .owl-nav button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    /* color: #163466; */
-    cursor: pointer;
-}
-.owl-carousel-2 .owl-nav button:hover {
-    background: none !important;
-    color:black !important;
-}
-.owl-carousel-2 .owl-nav button.owl-prev {
-    left: -70px;
-    position: relative;
-}
-.owl-carousel-2 .owl-nav button.owl-next {
-    right: -70px;
-    position: relative;
-}
-.owl-carousel-2 .owl-dots {
-    display: none;
-}
-.owl-carousel-2 .owl-prev span, .owl-next span {
-    font-size: 80px;
-}
-
 .table-custom {
     border-collapse: separate;
     border-spacing: 0 1rem; /* Adds space between rows */
@@ -120,4 +150,7 @@ h1, h2, h3, h4{
 }
 .table-custom td {
     border-left: 2px solid #065f46; /* green-800 */
+}
+.owl-carousel-1 .owl-prev span, .owl-next span{
+    font-size: 30px !important;
 }
