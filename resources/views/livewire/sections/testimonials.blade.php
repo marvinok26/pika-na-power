@@ -8,7 +8,7 @@
                 <div class="owl-carousel owl-carousel-1 owl-theme">
                     @foreach ($testimonials as $testimonial)
                         <div class="item px-20">
-                            <div class="text-base text-primary">{{$testimonial->content}}</div>
+                            <div class="text-base text-primary">{!!$testimonial->content!!}</div>
                             <div class="font-medium text-primary font-serif text-3xl mt-8">{{$testimonial->author}}</div>
                             <p class="mt-1 text-primary">{{$testimonial->author_location}}</p>
                         </div>
