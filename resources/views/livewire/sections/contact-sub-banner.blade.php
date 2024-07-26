@@ -16,7 +16,7 @@
                             </div>
                             <div data-aos="fade-left">
                                 <div class="text-sm font-normal text-link">{{ $contact->title }}</div>
-                                <p class="text-lg text-primary font-serif font-medium">{{ $contact->subtitle }}</p>
+                                <div class="text-lg text-primary font-serif font-medium">{!! $contact->subtitle !!}</div>
                             </div>
                         </div>
                     @endforeach
