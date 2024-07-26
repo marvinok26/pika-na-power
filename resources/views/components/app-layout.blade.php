@@ -54,7 +54,7 @@
         <script>
             AOS.init();
         </script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -71,22 +71,22 @@
                 });
 
                 $(".owl-carousel-2").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 4,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 2 // 2 items for screens from 0px and up
-            },
-            768: {
-                items: 4 // 4 items for screens from 768px and up
-            }
-        }
-    });
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    items: 4,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 2 // 2 items for screens from 0px and up
+                        },
+                        768: {
+                            items: 4 // 4 items for screens from 768px and up
+                        }
+                    }
+                });
             });
 
 
