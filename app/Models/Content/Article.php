@@ -14,6 +14,7 @@ class Article extends Model
         'date',
         'url',
         'thumbnail',
+        'category',
     ];
 
     protected $casts = [

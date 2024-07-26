@@ -25,9 +25,9 @@ class ContactResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required(),
-                Forms\Components\TextInput::make('subtitle')
-                    ->required(),
                 Forms\Components\TextInput::make('icon')
+                    ->required(),
+                Forms\Components\RichEditor::make('subtitle')
                     ->required(),
             ]);
     }
