@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Kenya Power PLC</title>
+        <title>Pika Na Power</title>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>@yield('title')</title>
         <!-- Fonts -->
@@ -18,6 +18,7 @@
         @livewireStyles
     </head>
     <body class="font-sans antialiased" x-cloak x-data="{darkMode: $persist(false), zoomLevel: $persist(100), siteGrayscale: $persist(false)}" :class="{'dark': darkMode === true }" :style="'zoom: ' + zoomLevel + '%'">
+        <div class="cursor"></div>
 
         {{-- <div class="bg-white dark:bg-slate-950 flex flex-col" x-data="scrollHandler()"> --}}
         <div class="bg-white dark:bg-slate-950 flex flex-col">
@@ -43,6 +44,8 @@
             {{-- <livewire:footer/> --}}
             <x-app-footer />
         </div>
+
+        <script src="{{ asset('js/app.js') }}" defer></script>
 
         @livewireScripts
 
@@ -85,6 +88,30 @@
         }
     });
             });
+
+
+            const cursor = document.querySelector(".cursor");
+            window.addEventListener("mousemove", (e) => {
+                cursor.style.left = e.pageX + "px";
+                cursor.style.top = e.pageY + "px";
+                cursor.setAttribute("data-fromTop", cursor.offsetTop - scrollY);
+                // console.log(e)
+                });
+            window.addEventListener("scroll", () => {
+                const fromTop = cursor.getAttribute("data-fromTop");
+                cursor.style.top = scrollY + parseInt(fromTop) + "px";
+                // console.log(scrollY);
+            });
+            window.addEventListener("click", () => {
+                if (cursor.classList.contains("click")) {
+                    cursor.classList.remove("click");
+                    void cursor.offsetWidth; // trigger a DOM reflow
+                    cursor.classList.add("click");
+                } else {
+                    cursor.classList.add("click");
+                }
+            });
+
         </script>
         <script>
             lightbox.option({

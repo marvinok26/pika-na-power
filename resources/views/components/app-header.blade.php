@@ -1,6 +1,6 @@
 <div :class="{ 'sticky shadow-2': isSticky }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 0 })"  x-data="{ isOpen: false,  isSticky: false, showSearch: false, searchModalOpen: false }">
     
-    <nav class="flex lg:hidden mx-auto max-w-7xl px-10 items-center bg-white dark:bg-slate-950 py-2 justify-between " aria-label="Global">
+    <nav class="flex lg:hidden mx-auto container px-10 items-center bg-white dark:bg-slate-950 py-2 justify-between " aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
@@ -9,7 +9,7 @@
         </div>
         <div class="flex lg:hidden gap-x-4">
             <button @click="isSearchOpen = !isSearchOpen"
-                class="flex items-center justify-center w-10 h-10 bg-[#163466] rounded-full hover:bg-gray-300 focus:outline-none focus:ring-6 focus:ring-gray-400">
+                class="flex items-center justify-center w-10 h-10 bg-primary rounded-full hover:bg-gray-300 focus:outline-none focus:ring-6 focus:ring-gray-400">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6 text-[#F9CC0B]">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -31,7 +31,7 @@
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <button
-                class="flex items-center justify-center w-10 h-10 bg-[#163466] rounded-full hover:bg-gray-300 focus:outline-none focus:ring-6 focus:ring-gray-400">
+                class="flex items-center justify-center w-10 h-10 bg-primary rounded-full hover:bg-gray-300 focus:outline-none focus:ring-6 focus:ring-gray-400">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6 text-[#F9CC0B]">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -41,16 +41,14 @@
         </div>
     </nav>
     
-    <div :class="isSticky ? 'bg-[#163466] dark:bg-slate-950 py-4 mt-0' : 'mt-12'" class=" px-6">
-        <nav class="lg:flex hidden mx-auto max-w-7xl items-center rounded-md justify-between " aria-label="Global">
+    <div :class="isSticky ? 'bg-primary dark:bg-slate-950 py-2 mt-0' : 'mt-12'" class=" px-6">
+        <nav class="lg:flex hidden mx-auto container lg:px-0 items-center rounded-md justify-between " aria-label="Global">
             <!-- loop category items -->
-            <div class="flex gap-x-12 ml-auto">
-                <div class="flex flex-row gap-1 rounded-xl bg-blue-900 px-1 py-1 border-2 border-yellow-400">
-                    <div class="bg-yellow-400 text-sm rounded-xl px-1">USSD</div>
-                    <div class="text-sm px-1 text-white font-semibold font-sans">*977#</div>
-                </div>
-    
-                
+            <div class="flex gap-x-6 ml-auto">
+                <a href="tel:*977#" class="flex flex-row gap-1 rounded-xl bg-primary px-1 py-1 border-2 border-brandyellow">
+                    <div class="bg-brandyellow text-xs rounded-xl px-1 text-primary">USSD</div>
+                    <div class="text-xs px-1 text-white font-semibold font-sans">*977#</div>
+                </a>
     
                 <div class="flex items-center w-6 h-6 rounded-full relative" x-data="{ showAccessibility: false }" x-ref="access"  @mouseenter="showAccessibility = true" @mouseleave="showAccessibility = false" x-init="$watch('showAccessibility', value => { if (value) { $dispatch('close-other-popups', $refs.access) } })">
                     <svg class="w-6 h-6 stroke-current dark:text-slate-100 text-slate-200 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M10 4.5V18c0 1.08-.44 2.07-1.14 2.79l-.04.04c-.09.09-.19.18-.28.25-.3.26-.64.46-.99.6-.11.05-.22.09-.33.13-.39.13-.81.19-1.22.19-.27 0-.54-.03-.8-.08-.13-.03-.26-.06-.39-.1-.16-.05-.31-.1-.46-.17 0-.01 0-.01-.01 0-.28-.14-.55-.3-.8-.49l-.01-.01c-.13-.1-.25-.2-.36-.32-.11-.12-.22-.24-.33-.37-.19-.25-.35-.52-.49-.8.01-.01.01-.01 0-.01 0 0 0-.01-.01-.02-.06-.14-.11-.29-.16-.44a5.58 5.58 0 0 1-.1-.39c-.05-.26-.08-.53-.08-.8V4.5C2 3 3 2 4.5 2h3C9 2 10 3 10 4.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 16.5v3c0 1.5-1 2.5-2.5 2.5H6c.41 0 .83-.06 1.22-.19.11-.04.22-.08.33-.13.35-.14.69-.34.99-.6.09-.07.19-.16.28-.25l.04-.04 6.8-6.79h3.84c1.5 0 2.5 1 2.5 2.5ZM4.81 21.82c-.6-.18-1.17-.51-1.64-.99-.48-.47-.81-1.04-.99-1.64a4.02 4.02 0 0 0 2.63 2.63Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.37 11.29 15.66 14l-6.8 6.79C9.56 20.07 10 19.08 10 18V8.34l2.71-2.71c1.06-1.06 2.48-1.06 3.54 0l2.12 2.12c1.06 1.06 1.06 2.48 0 3.54ZM6 19a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -105,42 +103,41 @@
                         </div>
                     </div>
                 </div>
-    
-    
-               
             </div>
         </nav>
     </div>
 
-    <div :class="{ 'shadow-2xl bg-white  dark:bg-slate-950': isSticky }">
-        <nav :class="isSticky ? 'mt-0 px-0 ' : 'mt-6 px-0 shadow'" class="lg:flex hidden mx-auto  max-w-7xl items-center bg-white dark:bg-slate-950  py-2 rounded-md justify-between px-6" 
-        aria-label="Global">
-        <div class="flex lg:flex-1">
-            <a href="/" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-16 w-auto" src="/images/logo.svg" alt="">
-            </a>
-        </div>
-        <div class="flex lg:hidden">
-            <button @click="isOpen = !isOpen" type="button"
-                class="-m-6.5 inline-flex items-center justify-center rounded-md p-6.5 text-gray-400">
-                <span class="sr-only">Open main menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                    aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-            </button>
-        </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-            @foreach ($pages as $page)
-                <a href="/{{$page->slug}}" class="text-base dark:text-white hover:underline hover:underline-offset-4 font-normal text-black">{{$page->name}}</a>
-            @endforeach
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <livewire:sections.search />
-        </div>
-    </nav>
+    <div :class="{ 'shadow bg-white  dark:bg-slate-950': isSticky }">
+        <nav :class="isSticky ? 'mt-0 px-0 ' : 'mt-3 px-0 shadow'" class="lg:flex hidden mx-auto container items-center bg-white dark:bg-slate-950  py-2 rounded-md justify-between px-6" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="/" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-14 w-auto" src="/images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button @click="isOpen = !isOpen" type="button"
+                    class="-m-6.5 inline-flex items-center justify-center rounded-md p-6.5 text-gray-400">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                @foreach ($pages as $page)
+                    <a href="/{{$page->slug}}" class="text-base dark:text-white font-normal text-black hover:text-brandgreen group relative">
+                        {{$page->name}}
+                        <span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-brandgreen group-hover:w-full"></span>
+                    </a>
+                @endforeach
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <livewire:sections.search />
+            </div>
+        </nav>
     </div>
 
     {{-- <!-- Mobile menu, show/hide based on menu open state. -->
