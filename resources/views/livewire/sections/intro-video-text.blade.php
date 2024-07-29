@@ -15,7 +15,7 @@
                     <h2 class="text-2xl mb-4 dark:text-white text-primary font-serif font-medium">{{$sectiondata->title}}</h2>
                     <div class="dark:text-white text-base text-slate-800 leading-7">{!!$sectiondata->description!!}</div>
                     <div>
-                        <a href={{$sectiondata->button_url}} wire:navigate class="text-white bg-[#163466] mt-8 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-1.5 text-center inline-flex items-center me-2 mb-2">
+                        <a href={{$sectiondata->button_url}} class="text-white bg-[#163466] mt-8 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-1.5 text-center inline-flex items-center me-2 mb-2">
                             {{$sectiondata->button_text}}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">

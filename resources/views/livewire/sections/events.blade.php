@@ -46,7 +46,7 @@
                                 </div>
                                 <!-- Article Title -->
                                 <h3 class="mt-1 text-base font-normal leading-6 text-white">
-                                    <a href="/events/{{$event->slug}}" wire:navigate>
+                                    <a href="/events/{{$event->slug}}">
                                         <span class="absolute inset-0"></span>
                                         {{$event->title}}
                                     </a>
