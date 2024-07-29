@@ -1,5 +1,5 @@
-@if ($sectiondata != null)
-    <section class="py-12">
+<section class="py-12">
+    @if ($sectiondata != null)
         <div class="mx-auto container lg:px-0 px-10 pb-10">
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Video Column -->
@@ -22,8 +22,6 @@
                     </div>
                 @endforeach
             </div>
-
         </div>
-
-    </section>
-@endif
+    @endif
+</section>

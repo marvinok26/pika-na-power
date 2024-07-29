@@ -1,5 +1,5 @@
-@if ($sectiondata != null)
-    <section class="py-16">
+<section class="py-16">
+    @if ($sectiondata != null)
         <div class="mx-auto container lg:px-0 pb-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                 <!-- Video Column -->
@@ -17,5 +17,5 @@
                 </div>
             </div>
         </div>
-    </section>
-@endif
+    @endif
+</section>

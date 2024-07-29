@@ -1,5 +1,5 @@
-@if ($sectiondata != null)
-    <section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-8 bg-cover"
+<section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-8 bg-cover"
+    @if ($sectiondata != null)
         style="background-image: url('{{ asset('/images/boxbackground.svg') }}');">
         <div class="mx-auto container lg:px-0 px-10 pb-10">
             <div class="flex flex-wrap justify-center items-center -mx-4">
@@ -37,5 +37,5 @@
                 @endforeach
             </div>
         </div>
-    </section>
-@endif
+    @endif
+</section>
