@@ -24,11 +24,10 @@
                     <div data-aos="fade-left" class="dark:text-white text-base text-slate-800 leading-7">
                         {!! $sectiondata->description !!}</div>
                     <div>
-                        <a href={{ $sectiondata->button_url }} data-aos="flip-right" wire:navigate
-                            class="text-white bg-[#163466] mt-8 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-1.5 text-center inline-flex items-center me-2 mb-2">
-                            {{ $sectiondata->button_text }}
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <a href={{$sectiondata->button_url}} class="text-white bg-[#163466] mt-8 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-1.5 text-center inline-flex items-center me-2 mb-2">
+                            {{$sectiondata->button_text}}
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                             </svg>
                         </a>
@@ -46,7 +45,7 @@
                     x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100"
                     class="flex w-full max-w-3xl flex-col gap-4 rounded-xl border border-slate-300 bg-white text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 relative overflow-visible">
                     <div
-                        class="absolute -top-4 -right-5 w-8 h-8 z-20 bg-yellow rounded-md flex items-center justify-center">
+                        class="absolute -top-4 -right-5 w-8 h-8 z-20 bg-brandyellow rounded-md flex items-center justify-center">
                         <button @click="modalIsOpen = false" aria-label="close modal"
                             class=" active:border-none focus:border-none">
                             <svg class="text-white fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg"

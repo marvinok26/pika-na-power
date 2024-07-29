@@ -48,7 +48,7 @@
                                 <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10">
                                 </div>
 
-                                <svg class="absolute text-yellow top-2/3 mb-8 left-1/2 transform -translate-x-1/2 -translate-y-28 h-12 w-12 fill-white cursor-pointer"
+                                <svg class="absolute text-brandyellow top-2/3 mb-8 left-1/2 transform -translate-x-1/2 -translate-y-28 h-12 w-12 fill-white cursor-pointer"
                                     width="48" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M.006 6a6 6 0 0 1 6-6h36a6 6 0 0 1 6 6v30a6 6 0 0 1-6 6h-36a6 6 0 0 1-6-6V6Zm3 27v3a3 3 0 0 0 3 3h36a3 3 0 0 0 3-3V25.5l-11.331-5.841a1.5 1.5 0 0 0-1.731.279l-11.13 11.13-7.98-5.316a1.5 1.5 0 0 0-1.89.186L3.006 33Zm15-19.5a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Z"
@@ -61,7 +61,7 @@
                                 </div>
                                 <!-- Article Title -->
                                 <h3 class="mt-1 text-base font-normal leading-6 text-white">
-                                    <a href="/events/{{ $event->slug }}" wire:navigate>
+                                    <a href="/events/{{$event->slug}}">
                                         <span class="absolute inset-0"></span>
                                         {{ $event->title }}
                                     </a>

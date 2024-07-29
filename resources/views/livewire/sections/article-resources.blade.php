@@ -48,7 +48,7 @@
                                 <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10">
                                 </div>
                                 <img src="/images/video.svg"
-                                    class="absolute text-yellow top-2/3 mb-8 left-1/2 transform -translate-x-1/2 -translate-y-28 h-12 w-12 fill-white cursor-pointer">
+                                    class="absolute text-brandyellow top-2/3 mb-8 left-1/2 transform -translate-x-1/2 -translate-y-28 h-12 w-12 fill-white cursor-pointer">
 
                                 <!-- Metadata Section -->
                                 <div

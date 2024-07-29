@@ -43,10 +43,10 @@
 
     <div class="bg-primary">
         <div class="container mx-auto px-4 sm:px-6 lg:px-0 py-6">
-            <div class="gap-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-col-5 xl:grid-cols-7">
+            <div class="gap-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-col-5 xl:grid-cols-6 items-center justify-center">
                 @if(!empty($socials))
                 @foreach($socials as $sociallink)
-                    <div class="col-span-1">
+                    <div class="col-span-1 flex items-center justify-center">
                         <a href="{{$sociallink->url}}" target="_blank" class="flex flex-row items-center gap-3">
                             <div class="flex-shrink-0 w-6 h-6">
                                 <img class="w-6 h-6" src="{{ asset($sociallink->icon) }}" alt="...">
