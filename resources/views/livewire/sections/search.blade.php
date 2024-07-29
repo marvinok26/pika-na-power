@@ -2,7 +2,7 @@
     <div class="ml-4 flow-root lg:ml-8">
         <button @click="searchModalOpen = true" type="button" class="group -m-2 flex items-center p-2 bg-primary rounded-full">
             <span class="sr-only">Search</span>
-            <svg class="h-6 w-6 text-yellow" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <svg class="h-6 w-6 text-brandyellow" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
         </button>
@@ -44,7 +44,7 @@
                             <div>
                                 @foreach($results as $type => $modelSearchResults)
                                     @if( count($modelSearchResults) > 0 )
-                                        <div class="sticky top-0 z-10 leading-6 text-primary dark:text-yellow pl-1 bg-slate-100 dark:bg-slate-800 mt-2">
+                                        <div class="sticky top-0 z-10 leading-6 text-primary dark:text-brandyellow pl-1 bg-slate-100 dark:bg-slate-800 mt-2">
                                             <h3 class="text-lg font-bold font-sans capitalize">{{ $type }}</h3>
                                         </div>
                                         @if($type === 'events')
