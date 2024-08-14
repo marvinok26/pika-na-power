@@ -1,5 +1,5 @@
 @if ($sectiondata != null)
-    <div class="py-20">
+    <div class="py-6">
         <div class="mx-auto container">
             <div class="flex flex-wrap justify-center items-center">
                 <!-- Image Column -->

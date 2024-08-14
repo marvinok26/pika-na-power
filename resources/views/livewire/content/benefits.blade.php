@@ -1,5 +1,5 @@
-<section class="py-8">
-    <div class="mx-auto container p-12">
+<section class="py-0">
+    <div class="mx-auto container px-8 pb-3">
         <div class="overflow-x-auto">
             <div class="min-w-full">
                 <div class="divide-y-2 divide-green-800 grid gap-y-4 grid-cols-1 items-start">
@@ -11,7 +11,7 @@
                             </div>
                             <div class="col-span-5 pt-3">
                                 <div data-aos="fade-left"
-                                    class="pl-4 border-l-2 border-green-900 text-base font-sans text-basic">
+                                    class="pl-4 border-l-2 border-green-900 text-base font-sans text-basic dark:text-slate-100">
                                     {{ $benefit->description }}</div>
                             </div>
                         </div>

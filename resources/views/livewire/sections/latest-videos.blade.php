@@ -1,5 +1,5 @@
 @if ($sectiondata != null)
-    <div class="bg-white dark:bg-gray-950 py-12 sm:py-16">
+    <div class="bg-white dark:bg-gray-950 py-8 sm:py-10">
         <div class="mx-auto container lg:px-0">
             <div class="mx-auto flex flex-col items-center sm:flex-row sm:justify-between mb-8 ">
                 <div class="text-3xl font-serif font-medium tracking-tight text-primary dark:text-white sm:text-5xl">
@@ -17,8 +17,7 @@
                 @foreach ($videos as $video)
                     <article data-aos="flip-right"
                         class="relative isolate flex flex-col transition-transform transform hover:scale-105 justify-end overflow-hidden rounded-2xl bg-light px-4 pb-8 pt-32 sm:pt-40 lg:pt-72">
-                        <img src={{ url('storage/' . $video->thumbnail) }} alt=""
-                            class="absolute inset-0 -z-10 h-full w-full object-cover">
+                        <img src={{ url('storage/' . $video->thumbnail) }} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
                         <div class="absolute inset-0 -z-10 bg-black/40"></div>
                         <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                         <img src="/images/video.svg"

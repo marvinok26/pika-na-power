@@ -1,12 +1,11 @@
 @if ($sectiondata != null)
-    <section class="py-16">
-        <div class="mx-auto container lg:px-0 pb-10">
+    <section class="py-6">
+        <div class="mx-auto container lg:px-0">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                 <!-- Video Column -->
                 <div class="flex justify-center">
-                    <div class="relative pb-9/16">
-                        <img data-aos="flip-right" src={{ url('storage/' . $sectiondata->image) }}
-                            class="w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg" alt="...">
+                    <div class="relative">
+                        <img data-aos="flip-right" src={{ url('storage/' . $sectiondata->image) }} class="w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg" alt="...">
                     </div>
                 </div>
                 <!-- Text Column -->

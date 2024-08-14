@@ -1,5 +1,5 @@
 @if ($sectiondata != null)
-    <div class="py-20" x-data="{ modalIsOpen: false }">
+    <div class="py-8" x-data="{ modalIsOpen: false }">
         <div class="mx-auto container lg:px-0 px-10">
             <div class="flex flex-col md:flex-row justify-center items-center gap-14">
                 <!-- Video Column -->

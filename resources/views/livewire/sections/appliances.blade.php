@@ -1,12 +1,11 @@
 @if ($sectiondata != null)
-    <section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-8 bg-cover"
+    <section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-4 bg-cover"
         style="background-image: url('{{ asset('/images/boxbackground.svg') }}');">
         <div class="mx-auto container lg:px-0 px-10 pb-10">
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Video Column -->
                 <div class="w-full md:w-6/12 px-4 mb-4 md:mb-0">
-                    <div
-                        class="text-3xl font-serif font-medium text-primary dark:text-white lg:text-5xl my-6 lg:py-0 leading-8 w-full max-w-xl">
+                    <div class="text-3xl font-serif font-medium text-primary dark:text-white lg:text-5xl my-4 lg:py-0 leading-8 w-full max-w-xl">
                         {{ $sectiondata->title }}
                     </div>
                 </div>

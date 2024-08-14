@@ -1,6 +1,5 @@
 @if ($sectiondata != null)
-    <section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-12 bg-cover"
-        style="background-image: url('{{ asset('/images/boxbackground.svg') }}');">
+    <section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-12 bg-cover" style="background-image: url('{{ asset('/images/boxbackground.svg') }}');">
         <div class="mx-auto container lg:px-0 px-10 pb-10 space-y-4">
             <div data-aos="fade-left"
                 class="text-3xl text-primary text-center lg:text-3xl font-serif font-medium max-w-2xl mx-auto">

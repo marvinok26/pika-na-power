@@ -36,8 +36,7 @@
         <div class="mx-auto container">
             <div class="bg-white dark:bg-gray-950 pb-16 ">
                 <div class="lg:px-0 px-4">
-                    <div
-                        class="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-4 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                    <div class="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-4 lg:mx-0 lg:max-w-none lg:grid-cols-4">
                         {{-- @dd($articles) --}}
                         @foreach ($articles as $article)
                             <article data-aos="flip-right"
@@ -47,8 +46,7 @@
                                 <div class="absolute inset-0 -z-10 bg-black/40"></div>
                                 <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10">
                                 </div>
-                                <img src="/images/video.svg"
-                                    class="absolute text-brandyellow top-2/3 mb-8 left-1/2 transform -translate-x-1/2 -translate-y-28 h-12 w-12 fill-white cursor-pointer">
+                                <img src="/images/video.svg" class="absolute text-brandyellow top-2/3 mb-8 left-1/2 transform -translate-x-1/2 -translate-y-28 h-12 w-12 fill-white cursor-pointer">
 
                                 <!-- Metadata Section -->
                                 <div

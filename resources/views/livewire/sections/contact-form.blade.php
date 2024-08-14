@@ -1,5 +1,5 @@
 @if ($sectiondata != null)
-    <div class="w-full bg-white dark:bg-slate-950 py-16">
+    <div class="w-full bg-white dark:bg-slate-950 py-6">
         <div class="w-full mx-auto container px-4 sm:px-6 lg:px-0 py-6 flex flex-col gap-5">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
 
@@ -10,8 +10,7 @@
                 </div>
 
                 <div class="col-span-1">
-                    <h2 data-aos="fade-left"
-                        class="text-3xl dark:text-white text-primary font-serif lg:text-5xl my-6 font-medium lg:py-0">
+                    <h2 data-aos="fade-left" class="text-3xl dark:text-white text-primary font-serif lg:text-5xl my-6 font-medium lg:py-0">
                         {{ $sectiondata->title }}
                     </h2>
                     <form class="grid grid-cols-1 gap-4 dark:bg-slate-950">

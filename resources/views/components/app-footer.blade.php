@@ -29,7 +29,7 @@
                                         <svg class="w-4 h-4 text-primary stroke-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M14.43 5.93 20.5 12l-6.07 6.07M3.5 12h16.83" stroke="" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                     </div>
                                 </div>
-                                <div class="flex-1 items-center font-semibold">
+                                <div class="flex-1 items-center font-semibold text-primary">
                                     {{$quicklink['title']}}
                                 </div>
                             </a>

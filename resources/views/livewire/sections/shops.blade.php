@@ -1,10 +1,10 @@
 @if ($sectiondata != null)
-    <section class="bg-white dark:bg-slate-950 bg-top bg-no-repeat py-12">
-        <div class="mx-auto container pb-10">
+    <section class="bg-white dark:bg-slate-950 bg-top bg-no-repeat py-8">
+        <div class="mx-auto container">
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Video Column -->
-                <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                    <div class="text-3xl dark:text-white text-primary lg:text-5xl my-6 font-medium font-serif lg:py-0">
+                <div class="w-full md:w-1/2 px-4 md:mb-0">
+                    <div class="text-3xl dark:text-white text-primary lg:text-5xl font-medium font-serif lg:py-0">
                         {{ $sectiondata->title }}
                     </div>
                 </div>
