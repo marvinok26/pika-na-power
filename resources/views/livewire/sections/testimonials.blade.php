@@ -1,6 +1,6 @@
-@if ($sectiondata != null)
-    <section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-8 bg-cover"
+<section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-8 bg-cover"
         style="background-image: url('{{ asset('/images/boxbackground.svg') }}');">
+    @if ($sectiondata != null)
         <div class="mx-auto w-full max-w-5xl lg:px-0 px-10 pb-10">
             <div class="text-center text-lg flex flex-col gap-6">
                 <h2 data-aos="fade-left"
@@ -18,6 +18,6 @@
                     @endforeach
                 </div>
             </div>
-        </div>
-    </section>
-@endif
+        </section>
+    @endif
+</div>

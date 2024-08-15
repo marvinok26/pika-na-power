@@ -26,6 +26,8 @@ class PartnerResource extends Resource
                 Forms\Components\FileUpload::make('logo')
                     ->image()
                     ->required(),
+                Forms\Components\TextInput::make('url')
+                    ->required(),
             ]);
     }
 
@@ -34,6 +36,9 @@ class PartnerResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\ImageColumn::make('logo')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('url')
                     ->searchable()
                     ->sortable(),
             ])

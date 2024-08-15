@@ -25,6 +25,12 @@ class PikaResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required(),
+                Forms\Components\Select::make('category')
+                    ->options([
+                        'article' => 'Article',
+                        'video' => 'Video',
+                    ])
+                    ->required(),
                 Forms\Components\TextInput::make('url')
                     ->required(),
             ]);
@@ -37,6 +43,7 @@ class PikaResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->searchable()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('category'),
                 Tables\Columns\TextColumn::make('url')
                     ->searchable()
                     ->sortable(),

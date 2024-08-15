@@ -1,5 +1,5 @@
-@if ($sectiondata != null)
-    <div class="bg-white dark:bg-gray-950 py-8 sm:py-10">
+<div class="bg-white dark:bg-gray-950 py-8 sm:py-10">
+    @if ($sectiondata != null)
         <div class="mx-auto container lg:px-0">
             <div class="mx-auto flex flex-col items-center sm:flex-row sm:justify-between mb-8 ">
                 <div class="text-3xl font-serif font-medium tracking-tight text-primary dark:text-white sm:text-5xl">
@@ -23,22 +23,23 @@
                         <img src="/images/video.svg"
                             class="absolute top-2/3 mb-14 left-1/2 transform -translate-x-1/2 -translate-y-28 h-12 w-12 fill-white cursor-pointer">
 
-                        <!-- Metadata Section -->
-                        <div class="flex flex-wrap items-center gap-y-1 overflow-hidden leading-6 text-slate-200">
-                            <time datetime="{{ $video->date }}"
-                                class="text-sm font-sans mr-6">{{ $video->date }}</time>
-                        </div>
+                            <!-- Metadata Section -->
+                            <div class="flex flex-wrap items-center gap-y-1 overflow-hidden leading-6 text-slate-200">
+                                <time datetime="{{ $video->date }}"
+                                    class="text-sm font-sans mr-6">{{ $video->date }}</time>
+                            </div>
 
-                        <!-- Article Title -->
-                        <h3 class="mt-1 text-base font-sans font-normal leading-6 text-white">
-                            <a href={{$video->url}}>
-                                <span class="absolute inset-0"></span>
-                                {{ $video->title }}
-                            </a>
-                        </h3>
-                    </article>
-                @endforeach
+                            <!-- Article Title -->
+                            <h3 class="mt-1 text-base font-sans font-normal leading-6 text-white">
+                                <a href={{ $video->url }} wire:navigate>
+                                    <span class="absolute inset-0"></span>
+                                    {{ $video->title }}
+                                </a>
+                            </h3>
+                        </article>
+                    @endforeach
+                </div>
             </div>
         </div>
-    </div>
-@endif
+    @endif
+</div>

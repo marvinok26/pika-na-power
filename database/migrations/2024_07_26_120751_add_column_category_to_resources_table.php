@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('partners', function (Blueprint $table) {
-            $table->id();
-            $table->string('logo');
-            $table->string('url');
-            $table->timestamps();
+        Schema::table('resources', function (Blueprint $table) {
+            $table->enum('category', ['article', 'video'])->default('video');
         });
     }
 
@@ -24,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('partners');
+        Schema::table('resources', function (Blueprint $table) {
+            $table->dropColumn('category');
+        });
     }
 };

@@ -105,8 +105,8 @@
                                     <img class="w-4 h-4" src="{{ asset($footercontact->icon) }}" alt="...">
                                 </div>
                                 <div class="pl-2 flex-1">
-                                    <p class=" text-sm font-serif text-gray-600 dark:text-slate-300">{{$footercontact->title}}</p>
-                                    <div class="font-medium font-sans text-base transform hover:scale-105 transition-all duration-300 text-primary dark:text-slate-500">{{$footercontact->subtitle}}</div>
+                                    <p class=" text-sm font-serif text-gray-600 dark:text-slate-300">{{ $footercontact->title }}</p>
+                                    <div class="font-medium font-sans text-base transform hover:scale-105 transition-all duration-300 text-primary dark:text-slate-500">{!! $footercontact->subtitle !!}</div>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
-@if ($sectiondata != null)
-    <section class="py-10">
+<section class="py-10">
+    @if ($sectiondata != null)
         <div class="mx-auto container lg:px-0 px-10">
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Video Column -->
@@ -15,7 +15,9 @@
                     @foreach ($partners as $partner)
                         <div class="swiper-slide">
                             <div class="border-2 rounded-xl border-sky-300 dark:border-black bg-gray-50 p-6 text-center hover:border-blue-800">
-                                <img data-aos="flip-right" src={{ url('storage/' . $partner->logo) }} class="h-28 object-contain" alt="">
+                                <a href="{{ $partner->url }}" target="_blank" rel="noreferrer">
+                                    <img data-aos="flip-right" src={{ url('storage/' . $partner->logo) }} class="h-28 object-contain" alt="">
+                                </a>
                             </div>
                         </div>
                     @endforeach
@@ -51,6 +53,5 @@
             </div> --}}
 
         </div>
-
-    </section>
-@endif
+    @endif
+</section>

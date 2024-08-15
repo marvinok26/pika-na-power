@@ -26,6 +26,12 @@ class ArticleResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required(),
                 Forms\Components\DatePicker::make('date'),
+                Forms\Components\Select::make('category')
+                    ->options([
+                        'article' => 'Article',
+                        'video' => 'Video',
+                    ])
+                    ->required(),
                 Forms\Components\TextInput::make('url')
                     ->required(),
                 Forms\Components\FileUpload::make('thumbnail'),
@@ -41,6 +47,7 @@ class ArticleResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('date')
                     ->date(),
+                Tables\Columns\TextColumn::make('category'),
                 Tables\Columns\TextColumn::make('url')
                     ->searchable()
                     ->sortable(),
