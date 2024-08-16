@@ -12,7 +12,7 @@
                             <div class="col-span-5 pt-3">
                                 <div data-aos="fade-left"
                                     class="pl-4 border-l-2 border-green-900 text-base font-sans text-basic dark:text-slate-100">
-                                    {{ $benefit->description }}</div>
+                                    {!! $benefit->description !!}</div>
                             </div>
                         </div>
                     @endforeach
