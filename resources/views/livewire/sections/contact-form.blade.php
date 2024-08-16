@@ -6,7 +6,7 @@
                     <iframe src="{{ $sectiondata->map_url }}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-span-1">
-                    <h2 data-aos="fade-left" class="text-3xl dark:text-white text-primary font-serif lg:text-5xl my-6 font-medium lg:py-0">{{ $sectiondata->title }}</h2>
+                    <h2 class="text-3xl dark:text-white text-primary font-serif lg:text-5xl my-6 font-medium lg:py-0">{{ $sectiondata->title }}</h2>
                     <form wire:submit.prevent="submitNewMessage" class="grid grid-cols-1 gap-4 dark:bg-slate-950">
                         @if(session('success'))
                             <div class="rounded-md bg-green-50 p-4">
@@ -68,10 +68,10 @@
                         <div class="mt-4">
                             <label class="block font-sans dark:text-white">How would you like us to reach out to you?</label>
                             <div class="flex items-center gap-8 mt-3">
+                                <input type="radio" id="emailOption" wire:model.defer="preferred" value="email" checked class="text-blue-500 dark:text-white">
+                                <label for="emailOption" class="text-basic font-sans dark:text-white">Email</label>
                                 <input type="radio" id="phoneOption" wire:model.defer="preferred" value="phone" class="text-blue-500 dark:text-white">
                                 <label for="phoneOption" class="text-basic font-sans dark:text-white">Phone</label>
-                                <input type="radio" id="emailOption" wire:model.defer="preferred" value="email" class="text-blue-500 dark:text-white">
-                                <label for="emailOption" class="text-basic font-sans dark:text-white">Email</label>
                                 <input type="radio" id="smsOption" wire:model.defer="preferred" value="sms" class="text-blue-500 dark:text-white">
                                 <label for="smsOption" class="text-basic font-sans dark:text-white">SMS</label>
                             </div>

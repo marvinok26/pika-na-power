@@ -62,9 +62,9 @@
                             @enderror
                         </div>
                         <div class="flex items-center justify-between">
-                            <button type="submit"
-                                class="text-white bg-primary mt-2 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-1.5 text-center inline-flex items-center me-2 mb-2">
-                                {{ $sectiondata->button_text }}
+                            <button type="submit" wire:loading.class="opacity-50 cursor-not-allowed" class="text-white bg-primary mt-2 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-1.5 text-center inline-flex items-center me-2 mb-2">
+                                <span wire:loading.remove>Book Your Slot Now</span>
+                                <span wire:loading>Booking Slot...</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
