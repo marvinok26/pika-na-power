@@ -30,7 +30,7 @@ class ContactForm extends Component
 
         session()->flash('success', 'Thank you for reaching out! We appreciate your interest and will be in touch soon.');
 
-        $this->reset();
+        $this->reset(['name', 'email', 'content', 'preferred']);
     }
 
     public function render()

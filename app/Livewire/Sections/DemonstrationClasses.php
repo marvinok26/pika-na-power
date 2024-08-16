@@ -23,7 +23,7 @@ class DemonstrationClasses extends Component
 
         session()->flash('success', 'Thank you for booking a slot. We will get back to you shortly.');
 
-        $this->reset();
+        $this->reset(['name', 'email']);
     }
 
     public function render()
