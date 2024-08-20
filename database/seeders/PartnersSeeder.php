@@ -15,34 +15,42 @@ class PartnersSeeder extends Seeder
     {
         Partner::create([
             'logo' => '/images/logo.svg',
+            'url' => 'https://me.com'
         ]);
 
         Partner::create([
             'logo' => '/images/logo.svg',
+            'url' => 'https://me.com'
         ]);
 
         Partner::create([
             'logo' => '/images/logo.svg',
+            'url' => 'https://me.com'
         ]);
 
         Partner::create([
             'logo' => '/images/logo.svg',
+            'url' => 'https://me.com'
         ]);
 
         Partner::create([
             'logo' => '/images/logo.svg',
+            'url' => 'https://me.com'
         ]);
 
         Partner::create([
             'logo' => '/images/logo.svg',
+            'url' => 'https://me.com'
         ]);
 
         Partner::create([
             'logo' => '/images/logo.svg',
+            'url' => 'https://me.com'
         ]);
 
         Partner::create([
             'logo' => '/images/logo.svg',
+            'url' => 'https://me.com'
         ]);
     }
 }

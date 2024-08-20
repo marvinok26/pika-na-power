@@ -1,5 +1,5 @@
 @if ($sectiondata != null)
-    <div class="py-8" x-data="{ modalIsOpen: false }">
+    <div class="py-8 intro-mobile" x-data="{ modalIsOpen: false, videoSrc: '{{ $sectiondata->video_url }}' }">
         <div class="mx-auto container lg:px-0 px-10">
             <div class="flex flex-col md:flex-row justify-center items-center gap-14">
                 <!-- Video Column -->
@@ -56,14 +56,15 @@
                         </button>
                     </div>
                     <div class="w-full relative">
-                        <iframe class="rounded-xl" width="100%" height="450px" src={{ $sectiondata->video_url }}
+                        <iframe class="rounded-xl" width="100%" height="450px" 
+                            x-bind:src="modalIsOpen ? videoSrc + '?autoplay=1' : ''"
                             title="Pika na Power - Electric pressure cooker (EPC)" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 @endif
+
