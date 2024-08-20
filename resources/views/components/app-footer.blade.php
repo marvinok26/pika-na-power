@@ -99,6 +99,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row items-center gap-4 justify-between">
                 @if(!empty($contacts))
                     @foreach($contacts as $footercontact)
+                
                         <div class="col-span-1">
                             <div class="flex items-center flex-row">
                                 <div class="flex flex-shrink-0 w-9 h-9 bg-primary items-center justify-center rounded-full">
