@@ -61,8 +61,11 @@
         <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       
+
         <script>
-            $('.myslider .owl-carousel').owlCarousel({
+            $(document).ready(function(){
+                $('.myslider .owl-carousel').owlCarousel({
     loop:true,
     margin:0,
     responsiveClass:true,
@@ -85,11 +88,6 @@
         }
     }
 })
-
-        </script>
-
-        <script>
-            $(document).ready(function(){
                 $(".owl-carousel-1").owlCarousel({
                     loop: true,
                     margin: 10,

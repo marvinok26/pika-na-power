@@ -2,7 +2,7 @@
     @if ($sectiondata != null)
     <div class="relative isolate overflow-hidden lg:px-0">
         <!-- Background Image with Overlay -->
-        <section class="myslider">
+        <section class="myslider overflow-hidden">
           <div class="owl-carousel owl-theme">
               <!-- img tile one-->
             <div class="item">
