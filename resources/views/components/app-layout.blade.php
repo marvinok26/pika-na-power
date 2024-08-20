@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         @vite('resources/css/app.css')
+        @vite('resources/css/dev.css')
         @livewireStyles
     </head>
     <body class="font-sans antialiased" x-cloak x-data="{darkMode: $persist(false), zoomLevel: $persist(100), siteGrayscale: $persist(false)}" :class="{'dark': darkMode === true }" :style="'zoom: ' + zoomLevel + '%'">
@@ -61,6 +62,32 @@
         <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            $('.myslider .owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    responsiveClass:true,
+      autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
+})
+
+        </script>
 
         <script>
             $(document).ready(function(){
@@ -150,5 +177,52 @@
                 // },
             });
         </script>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all counters
+    const counters = document.querySelectorAll('.counter');
+
+    // Function to update the counter value
+    const updateCounter = (element, endValue) => {
+        const duration = 2000; // Duration in milliseconds
+        const startValue = 0;
+        const startTime = performance.now();
+
+        const step = (currentTime) => {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1);
+            const value = Math.floor(progress * (endValue - startValue) + startValue);
+            element.textContent = value;
+            
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            }
+        };
+
+        requestAnimationFrame(step);
+    };
+
+    // Function to start the counter animation when it comes into view
+    const startCounterAnimation = (counter) => {
+        const endValue = parseInt(counter.getAttribute('data-end-value'));
+        updateCounter(counter, endValue);
+    };
+
+    // Initialize counters and observe them
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounterAnimation(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+});
+</script>
+
     </body>
 </html>

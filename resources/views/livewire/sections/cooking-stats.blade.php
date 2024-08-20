@@ -10,14 +10,16 @@
                     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         @foreach ($stats as $stat)
                             <div class="flex items-start justify-center text-left p-4">
-                                <div data-aos="fade-left"
+                                <div
                                     class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full mr-2">
-                                    <span class="text-yellow-400">{{ $stat->value }}</span>
+                                    <div class="counter-container">
+                                        <span class="counter text-yellow-400" data-end-value="{{ $stat->value }}">0</span>
+                                    </div>
                                 </div>
                                 <div>
-                                    <div data-aos="fade-left" class="text-base font-normal text-link">{{ $stat->title }}
+                                    <div class="text-base font-normal text-link">{{ $stat->title }}
                                     </div>
-                                    <p data-aos="fade-left" class="text-lg text-primary font-serif font-medium">
+                                    <p class="text-lg text-primary font-serif font-medium">
                                         {{ $stat->subtitle }}</p>
                                 </div>
                             </div>

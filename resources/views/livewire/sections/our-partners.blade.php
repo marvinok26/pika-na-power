@@ -16,7 +16,7 @@
                         <div class="swiper-slide">
                             <div class="border-2 rounded-xl border-sky-300 dark:border-black bg-gray-50 p-6 text-center hover:border-blue-800">
                                 <a href="{{ $partner->url }}" target="_blank" rel="noreferrer">
-                                    <img data-aos="flip-right" src={{ url('storage/' . $partner->logo) }} class="h-28 object-contain" alt="">
+                                    <img data-aos="flip-right" src={{ url('storage/' . $partner->logo) }} class="h-28 object-contain duration-300 ease-in-out" alt="">
                                 </a>
                             </div>
                         </div>
