@@ -202,3 +202,126 @@ html {
       transform: translate(-50%, -50%) scale(7);
     }
   }
+
+
+
+/* Jane Code */
+/**********The home page slider **********/
+ .myslider .owl-dots{
+    /* left: calc(50% - .5rem); */
+    line-height: 1;
+    padding-top: .5rem;
+    position: relative;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    top: auto;
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+ }
+
+
+ .myslider  .owl-theme .owl-dots .owl-dot.active span, .myslider .owl-theme .owl-dots .owl-dot:hover span {background: #f3cb4d;}
+ .myslider .owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 5px 10px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.myslider .owl-nav .owl-next span,.myslider .owl-nav .owl-prev span{margin-top: -4px;}
+.myslider .owl-theme .owl-nav [class*=owl-] {
+  margin: 0px!important;
+  padding: 0px!important;
+   width: 30px;
+  height: 30px;
+  background-color: #f3cb4d;
+  border-radius: 5px;
+  padding: 0px 15px;
+  line-height:30px
+}
+
+.myslider .owl-theme .owl-nav [class*=owl-]:hover {background-color:#1d3463;}
+.myslider .owl-theme .owl-nav {
+    margin-top: -4rem;
+    position: absolute;
+    z-index: 3;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    left: 5%;
+}
+
+.myslider .owl-carousel .owl-nav button.owl-next, .myslider .owl-carousel .owl-nav button.owl-prev{
+     background: #f3cb4d;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 15px !important;
+}
+.grid.grid-cols-1 .col-span-1:nth-of-type(1){
+  display: none!important;
+}
+
+.counter-container {
+  display: inline-block;
+}
+
+.counter {
+  font-weight: bold;
+  transition: transform 0.5s ease;
+}
+
+/* Animation class */
+.counter.animate {
+  animation: countAnimation 1s ease-out forwards;
+}
+
+@keyframes countAnimation {
+  from {
+      transform: scale(0);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .intro-mobile .px-10 {
+    padding:.5rem .5rem;
+}
+header nav.px-10{
+  padding-left:1rem;
+  padding-right:1rem;
+}
+ .myslider .owl-carousel .owl-item img {
+  min-height: 420px;
+  max-height: 420px;
+}
+.myslider .owl-theme .owl-nav {margin-top: -3rem;}
+.myslider .owl-dots{display:none;}
+.myslider .left-9{left:1rem;}
+.myslider .py-5{padding-bottom:0px;padding-top: 4rem;}
+.myslider h1{ 
+  font-size: 1.875rem;
+  line-height: normal;
+}
+.px-10 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+  
+  }
