@@ -10,11 +10,11 @@
                 </div>
             </div>
             <!-- Item 1 -->
-            <div class="mx-auto container overflow-hidden relative lg:px-6 flex items-center">
+            <div class="overflow-hidden relative flex items-center">
             <div class="slick-slider">
                     @foreach ($partners as $partner)
                         <div class="slick-slide">
-                            <div class="border-sky-300 dark:border-black p-6 text-center hover:border-blue-800">
+                            <div class="border-sky-300 dark:border-black text-center hover:border-blue-800">
                                 <a href="{{ $partner->url }}" target="_blank" rel="noreferrer">
                                     <img data-aos="flip-right" src={{ url('storage/' . $partner->logo) }} class="h-28 object-contain duration-300 ease-in-out" alt="">
                                 </a>

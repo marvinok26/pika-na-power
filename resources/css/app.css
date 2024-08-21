@@ -213,7 +213,7 @@ html {
   transition: transform 2000ms ease-in-out;
 }
 .slick-slide img {
-  max-height: 4em;
+  max-height: 5em;
   margin: auto;
   display: block;
 }
