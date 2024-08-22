@@ -324,6 +324,7 @@ header nav.px-10{
  .myslider .owl-carousel .owl-item img {
   min-height: 420px;
   max-height: 420px;
+  object-position: right;
 }
 .myslider .owl-theme .owl-nav {margin-top: -3rem;}
 .myslider .owl-dots{display:none;}
