@@ -10,11 +10,11 @@
                 </div>
             </div>
             <!-- Item 1 -->
-            <div class="mySwiper mx-auto container overflow-hidden relative px-2 lg:px-6 flex items-center">
-                <div class="swiper-wrapper">
+            <div class="overflow-hidden relative flex items-center">
+            <div class="slick-slider">
                     @foreach ($partners as $partner)
-                        <div class="swiper-slide">
-                            <div class=" border-sky-300 dark:border-black p-6 text-center">
+                        <div class="slick-slide">
+                            <div class="border-sky-300 dark:border-black text-center hover:border-blue-800">
                                 <a href="{{ $partner->url }}" target="_blank" rel="noreferrer">
                                     <img data-aos="flip-right" src={{ url('storage/' . $partner->logo) }} class="h-28 object-contain duration-300 ease-in-out" alt="">
                                 </a>
@@ -23,19 +23,8 @@
                     @endforeach
                 </div>
 
-                <div class="flex flex-row justify-between absolute inset-x-0 z-10 -mx-1.5">
-                    <button class="kp-button-prev">
-                        <svg class="h-8 w-8 flex-none text-primary dark:text-white transform rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-    
-                    <button class="kp-button-next">
-                        <svg class="h-8 w-8 flex-none text-primary dark:text-white transform -rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                </div>
+
+               
 
 
                 {{-- <div class="swiper-button-next"></div>

@@ -206,6 +206,20 @@ html {
 
 
 /* Jane Code */
+/**********slick slider**********/
+.slick-slider {width:100%;}
+.slick-slide {
+  outline: none;
+  transition: transform 2000ms ease-in-out;
+}
+.slick-slide img {
+  max-height: 5em;
+  margin: auto;
+  display: block;
+}
+.slick-slide:hover {
+  transform: scale(1.1);
+}
 /**********The home page slider **********/
  .myslider .owl-dots{
     /* left: calc(50% - .5rem); */
