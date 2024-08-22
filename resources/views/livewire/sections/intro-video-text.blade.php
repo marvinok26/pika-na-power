@@ -1,5 +1,5 @@
 @if ($sectiondata != null)
-    <div class="py-8 intro-mobile" x-data="{ modalIsOpen: false, videoSrc: '{{ $sectiondata->video_url }}' }">
+    <div class="py-8 intro-mobile overflow-hidden" x-data="{ modalIsOpen: false, videoSrc: '{{ $sectiondata->video_url }}' }">
         <div class="mx-auto container lg:px-0 px-10">
             <div class="flex flex-col md:flex-row justify-center items-center gap-14">
                 <!-- Video Column -->
