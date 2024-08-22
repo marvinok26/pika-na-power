@@ -41,7 +41,7 @@
         </div>
     </nav>
     
-    <div :class="isSticky ? 'bg-primary dark:bg-slate-950 py-2 mt-0' : 'mt-12'" class=" px-6">
+    <div :class="isSticky ? 'bg-primary dark:bg-slate-950 py-2 mt-0' : 'mt-4'" class=" px-6">
         <nav class="lg:flex hidden mx-auto container lg:px-0 items-center rounded-md justify-between " aria-label="Global">
             <!-- loop category items -->
             <div class="flex gap-x-6 ml-auto">

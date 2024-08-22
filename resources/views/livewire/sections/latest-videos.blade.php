@@ -18,7 +18,7 @@
                     <article data-aos="flip-right"
                         class="relative isolate flex flex-col transition-transform transform hover:scale-105 justify-end overflow-hidden rounded-2xl bg-light px-4 pb-8 pt-32 sm:pt-40 lg:pt-72">
                         <img src={{ url('storage/' . $video->thumbnail) }} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
-                        <div class="absolute inset-0 -z-10 bg-black/40"></div>
+                        <div class="absolute inset-0 -z-10 bg-black/40 absolute inset-0 -z-10 bg-gradient-to-t from-black via-gray-900/50"></div>
                         <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                         <img src="/images/video.svg"
                             class="absolute top-2/3 mb-14 left-1/2 transform -translate-x-1/2 -translate-y-28 h-12 w-12 fill-white cursor-pointer">
