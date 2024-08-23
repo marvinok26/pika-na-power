@@ -1,6 +1,6 @@
-<section class="py-6">
+<section class="py-10">
     @if ($sectiondata != null)
-        <div class="mx-auto container lg:px-0">
+        <div class="mx-auto container px-4 xl:px-0">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                 <!-- Video Column -->
                 <div class="flex justify-center">

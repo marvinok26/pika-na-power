@@ -1,6 +1,6 @@
 <div class="bg-white dark:bg-gray-950 py-8 sm:py-10">
     @if ($sectiondata != null)
-        <div class="mx-auto container lg:px-0">
+        <div class="mx-auto container px-4 lg:px-0">
             <div class="mx-auto flex flex-col items-center sm:flex-row sm:justify-between mb-8 ">
                 <div class="text-3xl font-serif font-medium tracking-tight text-primary dark:text-white sm:text-5xl">
                     {{ $sectiondata->title }}
