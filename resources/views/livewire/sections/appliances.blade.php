@@ -1,7 +1,7 @@
-<section class="bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 py-4 bg-cover"
+<section class="py-10 bg-top bg-no-repeat w-full bg-lightblue dark:bg-slate-950 bg-cover"
         style="background-image: url('{{ asset('/images/boxbackground.svg') }}');">
     @if ($sectiondata != null)
-        <div class="mx-auto container lg:px-0 px-10 pb-10">
+        <div class="mx-auto container lg:px-4 xl:px-0 px-10 pb-4">
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Video Column -->
                 <div class="w-full md:w-6/12 px-4 mb-4 md:mb-0">
