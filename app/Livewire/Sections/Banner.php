@@ -3,6 +3,7 @@
 namespace App\Livewire\Sections;
 
 use App\Models\Sections\Banner as SectionsBanner;
+use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 
 class Banner extends Component
@@ -18,10 +19,6 @@ class Banner extends Component
 
     public function render()
     {
-        return view('livewire.sections.banner', [
-            'sectiondata' => $this->sectiondata,
-            'section' => $this->section,
-            'slider' => $this->slider
-        ]);
+        return view('livewire.sections.banner');
     }
 }

@@ -1,7 +1,7 @@
 <div class="bg-white dark:bg-gray-950">
 
-    <div class="bg-brandyellow">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-0 py-6 flex flex-col lg:flex-row gap-y-6 gap-x-10 justify-center items-center lg:justify-between">
+    <div class="bg-brandyellow px-4">
+        <div class="container mx-auto  sm:px-6 lg:px-0 py-6 flex flex-col lg:flex-row gap-y-6 gap-x-10 justify-center items-center lg:justify-between">
             <div class="text-3xl lg:text-5xl font-medium font-serif text-primary block lg:hidden">
                 Quick Links
             </div>
@@ -60,8 +60,8 @@
         </div>
     </div>
 
-    <div class="bg-light dark:bg-slate-900">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-0 py-6">
+    <div class="bg-light dark:bg-slate-900 px-4">
+        <div class="container mx-auto  sm:px-6 lg:px-0 py-6">
             <div class="gap-6 flex flex-wrap lg:flex-row justify-between">
                 <div class="col-span-1">
                     <div class="flex flex-col items-start lg:items-start gap-y-2.5">

@@ -2,9 +2,9 @@
 
 namespace App\Livewire\Sections;
 
+use App\Models\Content\Event;
 use Livewire\Component;
 use Livewire\WithPagination;
-use App\Models\Content\Event;
 
 class Events extends Component
 {
@@ -26,7 +26,7 @@ class Events extends Component
     {
         return view('livewire.sections.events', [
             'sectiondata' => $this->sectiondata,
-            'events' => Event::where('title', 'like', '%' . $this->query . '%')->paginate(12)
+            'events' => Event::where('title', 'like', '%' . $this->query . '%')->orderBy('date', 'desc')->paginate(12),
         ]);
     }
 }

@@ -1,10 +1,10 @@
-<section class="py-10">
+<section class="py-4 md:py-10">
     @if ($sectiondata != null)
-        <div class="mx-auto container lg:px-0 px-10">
+        <div class="mx-auto container px-4 sm:px-6 md:mb-8 md:px-10 lg:px-0 mb-0">
             <div class="flex flex-wrap justify-center items-center -mx-4">
                 <!-- Video Column -->
-                <div class="w-full px-4 mb-4 md:mb-0">
-                    <h2 data-aos="fade-left" class="text-3xl dark:text-white text-primary font-serif lg:text-5xl mb-6 lg:py-0">
+                <div class="w-full px-4 mb-0 md:mb-4 ld:mb-10">
+                    <h2 data-aos="fade-left" class="text-3xl dark:text-white text-primary font-serif lg:text-5xl mt-4 md:mt-0 mb-0 md:mb-6 lg:py-0">
                         {{ $sectiondata->title }}
                     </h2>
                 </div>

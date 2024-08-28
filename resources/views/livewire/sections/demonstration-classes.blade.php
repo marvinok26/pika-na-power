@@ -1,4 +1,4 @@
-<div class="py-6">
+<div class="py-10">
     @if ($sectiondata != null)
         <div class="mx-auto container">
             <div class="flex flex-wrap justify-center items-center">

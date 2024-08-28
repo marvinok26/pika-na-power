@@ -1,8 +1,8 @@
 <div class="w-full bg-white dark:bg-slate-950 py-6">
     @if ($sectiondata != null)
         <div class="w-full mx-auto container px-4 sm:px-6 lg:px-0 py-6 flex flex-col gap-5">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-                <div class="col-span-1 flex-grow rounded-lg min-h-96 bg-cover bg-center overflow-hidden bg-light dark:bg-slate-950 border border-sky-300 dark:border-sky-700">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-20">
+                <div class="col-span-1 flex-grow rounded-lg min-h-96 bg-cover bg-center overflow-hidden bg-light dark:bg-slate-950 border border-sky-300 dark:border-sky-700" style="display:block!important;">
                     <iframe src="{{ $sectiondata->map_url }}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-span-1">
@@ -33,7 +33,7 @@
                             </div>
                         @endif
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="col-span-1">
+                            <div class="col-span-1" style="display: block !important;">
                                 <label for="name" class="block font-bold font-sans text-primary mb-2 dark:text-white">Name (required)</label>
                                 <input type="text" id="name" placeholder="Your name" wire:model.defer="name" class="w-full bg-inputblue/50 dark:bg-gray-800 border-0 rounded-md p-2 text-black dark:text-white placeholder:text-sm">
                                 @error('name')
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4 mt-4">
-                            <div class="col-span-1">
+                            <div class="col-span-1" style="display: block !important;">
                                 <label for="phone" class="block font-bold font-sans text-primary mb-2 dark:text-white">Phone (optional)</label>
                                 <input type="tel" id="phone" placeholder="Your phone number" wire:model="phone" class="w-full bg-inputblue/50 dark:bg-gray-800 border-0 rounded-md p-2 text-black dark:text-white placeholder:text-sm">
                             </div>
