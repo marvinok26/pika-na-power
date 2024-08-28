@@ -2,23 +2,20 @@
 
 namespace App\Filament\Resources\Sections;
 
-use Filament\Forms;
-use Filament\Tables;
-use Filament\Forms\Form;
-use Filament\Tables\Table;
+use App\Filament\Resources\Sections\BannerResource\Pages;
 use App\Models\Sections\Banner;
-use Filament\Resources\Resource;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
+use App\Traits\PageSectionFormTableTraits;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Sections\BannerResource\Pages;
-use App\Filament\Resources\Sections\BannerResource\RelationManagers;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
 
 class BannerResource extends Resource
 {
+    use PageSectionFormTableTraits;
     protected static ?string $model = Banner::class;
     protected static ?string $navigationGroup = 'Sections';
     protected static ?string $navigationIcon = 'heroicon-s-bars-3';
@@ -36,6 +33,7 @@ class BannerResource extends Resource
                 //     ->searchable()
                 //     ->preload()
                 //     ->required(),
+                 ...self::selectPage(),
                 FileUpload::make('image')
                     ->columnSpanFull(),
                 RichEditor::make('description')
