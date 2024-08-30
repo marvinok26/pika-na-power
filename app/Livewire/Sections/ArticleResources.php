@@ -2,9 +2,9 @@
 
 namespace App\Livewire\Sections;
 
+use App\Models\Content\Article;
 use Livewire\Component;
 use Livewire\WithPagination;
-use App\Models\Content\Article;
 
 class ArticleResources extends Component
 {
@@ -29,12 +29,12 @@ class ArticleResources extends Component
         if ($this->search) {
             $articles->where(function ($q) {
                 $q->where('title', 'like', '%' . $this->search . '%');
-            });
+            })->orderBy('date', 'desc');
         }
 
         return view('livewire.sections.article-resources', [
             'sectiondata' => $this->sectiondata,
-            'articles' => $articles->paginate(8)
+            'articles' => $articles->orderBy('date', 'desc')->paginate(8),
         ]);
     }
 }
